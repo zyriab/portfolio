@@ -33,7 +33,7 @@ a {
 }
 
 body {
-    font-family: "Fira Mono", Arial, sans-serif;
+    font-family: "Fira Mono", monospace, sans-serif;
     overflow: hidden;
     padding: 1rem;
     height: 100vh;
