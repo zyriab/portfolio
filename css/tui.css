@@ -373,9 +373,10 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
     }
 
     #modal-controls {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
     }
 
     #modal-controls button {
@@ -401,7 +402,6 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
 
     #main-content .container-content {
         height: 100%;
-        padding-top: 0;
     }
 
     .container {
