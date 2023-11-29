@@ -398,6 +398,7 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
     #mobile-help {
         margin-top: 1rem;
         font-size: 1.1rem;
+        display: block;
     }
 
     #main-content .container-content {
