@@ -55,6 +55,51 @@ async function fetchRandomBibleVerse() {
     return data
 }
 
+async function displayRandomBibleVerse(parentElement = null) {
+    try {
+        const bibleVerse = document.getElementsByClassName('bible-verse')?.[0] ||
+            document.createElement('div');
+        bibleVerse.classList.remove('bible-verse');
+        bibleVerse.classList.add('bible-verse');
+
+        const referenceElement = document.createElement('div');
+        referenceElement.classList.add('reference');
+
+        const textElement = document.createElement('div');
+        textElement.innerHTML = 'Connecting to the Holy Ghost...';
+
+        bibleVerse.appendChild(textElement);
+        bibleVerse.appendChild(referenceElement);
+
+        parentElement?.appendChild(bibleVerse);
+
+        const { text, bookname, chapter, verse } = await fetchRandomBibleVerse();
+        referenceElement.innerText = `${bookname} ${chapter}:${verse}`;
+        textElement.innerHTML =
+            text
+                .replaceAll('Jesus',
+                    `<span class="${getRandomTextColorClass()}">Jesus</span>`
+                )
+                .replaceAll('Christ',
+                    `<span class="${getRandomTextColorClass()}">Christ</span>`
+                )
+                .replaceAll('Savior',
+                    `<span class="${getRandomTextColorClass()}">Savior</span>`
+                )
+                .replaceAll('Lord',
+                    `<span class="${getRandomTextColorClass()}">Lord</span>`
+                )
+                .replaceAll('God',
+                    `<span class="${getRandomTextColorClass()}">God</span>`
+                )
+                .replaceAll('Faith',
+                    `<span class="${getRandomTextColorClass()}">Faith</span>`
+                );
+    } catch (e) {
+        console.error(e);
+    }
+}
+
 function getRandomTextColorClass() {
     return COLORS[Math.floor(Math.random() * COLORS.length)];
 }
@@ -148,13 +193,13 @@ async function displayContent() {
     const response = await fetch(`data/${sectionName}.json`)
     const { data } = await response.json();
 
-    const parentElement = document.createElement('div');
-    parentElement.classList.add('outer-paragraph-container');
-    const childElement = document.createElement('div');
-    childElement.classList.add('inner-paragraph-container');
+    const outerContainerElement = document.createElement('div');
+    outerContainerElement.classList.add('outer-paragraph-container');
+    const innerContainerElement = document.createElement('div');
+    innerContainerElement.classList.add('inner-paragraph-container');
 
     if (sectionName !== 'home') {
-        childElement.classList.add('mt-4')
+        innerContainerElement.classList.add('mt-4')
 
         const sectionData = data[currentPosition.sectionItemIndex];
         const topElement = document.createElement('div');
@@ -241,14 +286,14 @@ async function displayContent() {
             const element = document.createElement('div');
 
             element.innerHTML = colorizeString(c).replaceAll('\n', '<br>');
-            childElement.appendChild(element);
+            innerContainerElement.appendChild(element);
 
             if (i < imageElements.length) {
                 const imageContainerElement = document.createElement('div');
                 imageContainerElement.classList.add('image-container');
                 imageContainerElement.appendChild(imageElements[i]);
 
-                childElement.appendChild(imageContainerElement);
+                innerContainerElement.appendChild(imageContainerElement);
             }
         })
 
@@ -263,16 +308,16 @@ async function displayContent() {
             codeElement.innerText = await getCodeSnippet(sectionData.snippet);
 
             snippetContainerElement.appendChild(snippetElement);
-            childElement.appendChild(snippetContainerElement);
+            innerContainerElement.appendChild(snippetContainerElement);
         }
 
-        childElement.prepend(topElement);
-        parentElement.appendChild(childElement);
-        MAIN_CONTENT_SECTION.appendChild(parentElement);
+        innerContainerElement.prepend(topElement);
+        outerContainerElement.appendChild(innerContainerElement);
+        MAIN_CONTENT_SECTION.appendChild(outerContainerElement);
 
         colorizeCode();
 
-        cache[sectionName + currentPosition.sectionItemIndex] = parentElement;
+        cache[sectionName + currentPosition.sectionItemIndex] = outerContainerElement;
     } else {
         const logoFileName = `images/logo${Math.floor(Math.random() * 4) + 1}.svg`;
         const logoContainer = document.createElement('div');
@@ -296,58 +341,20 @@ async function displayContent() {
                 element.appendChild(paragraph);
             })
 
-            childElement.appendChild(element);
+            innerContainerElement.appendChild(element);
         })
 
-        parentElement.appendChild(childElement);
-        MAIN_CONTENT_SECTION.appendChild(parentElement);
+        outerContainerElement.appendChild(innerContainerElement);
+        MAIN_CONTENT_SECTION.appendChild(outerContainerElement);
 
-        try {
-            const bibleVerse = document.createElement('div');
-            bibleVerse.classList.add('bible-verse');
-
-            const referenceElement = document.createElement('div');
-            referenceElement.classList.add('reference');
-
-            const textElement = document.createElement('div');
-            textElement.innerHTML = 'Connecting to the Holy Ghost...';
-
-            bibleVerse.appendChild(textElement);
-            bibleVerse.appendChild(referenceElement);
-
-            childElement.appendChild(bibleVerse);
-
-            const { text, bookname, chapter, verse } = await fetchRandomBibleVerse();
-            referenceElement.innerText = `${bookname} ${chapter}:${verse}`;
-            textElement.innerHTML =
-                text
-                    .replaceAll('Jesus',
-                        `<span class="${getRandomTextColorClass()}">Jesus</span>`
-                    )
-                    .replaceAll('Christ',
-                        `<span class="${getRandomTextColorClass()}">Christ</span>`
-                    )
-                    .replaceAll('Savior',
-                        `<span class="${getRandomTextColorClass()}">Savior</span>`
-                    )
-                    .replaceAll('Lord',
-                        `<span class="${getRandomTextColorClass()}">Lord</span>`
-                    )
-                    .replaceAll('God',
-                        `<span class="${getRandomTextColorClass()}">God</span>`
-                    )
-                    .replaceAll('Faith',
-                        `<span class="${getRandomTextColorClass()}">Faith</span>`
-                    );
-        } catch (e) {
-            console.error(e);
-        }
+        await displayRandomBibleVerse(innerContainerElement);
     }
 }
 
 // HACK: CSS stands for Constant Source of Suffering
 async function setSkillsDecorativeTextsPosition() {
     // layout switch causes error in calculation
+    // so we wait for the fonts to be loaded
     await document.fonts.ready;
 
     const reposition = () => {
@@ -373,7 +380,6 @@ async function setSkillsDecorativeTextsPosition() {
         const skillsTitleElementHeight = skillsTitleElement.clientHeight;
 
         skillsTitleElement.style.top = `${firstSkillElement.offsetTop - skillsTitleElementHeight}px`;
-        // FIXME: using the element's bottom is not a good idea
         skillsItemIndexElement.style.bottom =
             `${(skillsItemIndexElement.getBoundingClientRect().bottom -
                 SKILLS_SECTION.getBoundingClientRect().bottom) -
@@ -408,9 +414,8 @@ async function init() {
     initMouseListeners();
     initTouchListeners();
 
-
     await render(true, true);
-
+    await displayRandomBibleVerse();
     await setSkillsDecorativeTextsPosition();
 }
 
