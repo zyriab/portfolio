@@ -3,6 +3,7 @@
         {
             "name": "wallenart.dev",
             "year": 2023,
+            "githubUrl": "https://github.com/ZyriabDsgn/portfolio/tree/main",
             "content": [
                 "This website was built in {{3 days}} using only HTML, CSS and JavaScript with {{no other dependencies}} or tooling than an external API to fetch {{Bible}} verses.\nIt is a {{100% original UX & UI}} that I built and designed, based on {{terminal user interfaces}} (aka {{TUI}}).",
                 "It is also a {{static website}} that is {{completely responsive}}, with a quite distinct {{mobile}} and {{desktop}} UX.\nI've always {{loved}} TUI and wanted to give this experience to {{you}}, dear visitor.",
