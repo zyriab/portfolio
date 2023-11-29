@@ -10,13 +10,17 @@ const PROJECTS_SECTION = document.getElementById('projects');
 const FOOTER_SECTION = document.getElementById('footer');
 const MAIN_CONTENT_SECTION = document.getElementById('main-content')?.getElementsByClassName('container-content')[0];
 
+// TODO: replace the colors at each render even when cached?
+
 const COLORS = ['text-blue', 'text-orange', 'text-pink'];
+
+const cache = {}
 
 const left_sections = [
     { name: 'home', section: HOME_SECTION, items: [] },
-    { name: 'experience', section: EXPERIENCE_SECTION, items: [] },
-    { name: 'projects', section: PROJECTS_SECTION, items: [] },
-    { name: 'skills', section: SKILLS_SECTION, items: [] },
+    { name: 'experience', section: EXPERIENCE_SECTION, items: [...EXPERIENCE_SECTION.firstElementChild.children[2].children] },
+    { name: 'projects', section: PROJECTS_SECTION, items: [...PROJECTS_SECTION.firstElementChild.children[2].children] },
+    { name: 'skills', section: SKILLS_SECTION, items: [...SKILLS_SECTION.firstElementChild.children[2].children] },
 ]
 
 const currentPosition = {
@@ -123,55 +127,26 @@ function isVisibleInScrollView(element, container) {
     const containerTop = container.scrollTop;
     const containerBottom = containerTop + container.clientHeight;
 
-    return elementTop >= containerTop && elementBottom <= containerBottom
+    const isVisible = elementTop >= containerTop && elementBottom <= containerBottom
+
+    console.log(isVisible)
+
+    return isVisible;
 };
-
-async function populateSection(sectionName) {
-    const section = left_sections.find(s => s.name === sectionName)?.section;
-
-    if (section == null) {
-        throw new Error(`Section ${sectionName} not found`);
-    }
-
-    const items = left_sections.find(s => s.section === section).items;
-
-    if (items == null) {
-        throw new Error(`Section ${sectionName} not found`);
-    }
-
-    const response = await fetch(`data/${sectionName}.json`)
-    const { data } = await response.json();
-
-    data.forEach(d => {
-        const element = document.createElement('div');
-        const company = d.company
-            ? `<span class="text-orange">${d.company}</span>`
-            : null;
-
-        element.innerText = d.name;
-
-        if (company != null) {
-            element.innerHTML += ` @ ${company}`;
-        }
-
-        section.getElementsByClassName("ui-list")[0].appendChild(element);
-        items.push(element);
-    });
-
-    let sectionItemIndexElement =
-        section.getElementsByClassName("list-index")[0]
-
-    if (sectionItemIndexElement == null) {
-        return;
-    }
-
-    sectionItemIndexElement.innerText = `1 of ${items.length}`;
-}
 
 async function displayContent() {
     MAIN_CONTENT_SECTION.innerHTML = '';
 
     const sectionName = left_sections[currentPosition.sectionIndex].name;
+
+
+    if (cache[sectionName + currentPosition.sectionItemIndex] != null) {
+        console.log('using cache')
+        MAIN_CONTENT_SECTION.appendChild(cache[sectionName +
+            currentPosition.sectionItemIndex]);
+        return;
+    }
+
     const response = await fetch(`data/${sectionName}.json`)
     const { data } = await response.json();
 
@@ -251,6 +226,7 @@ async function displayContent() {
 
         const imageElements = sectionData.images?.map((imagePath) => {
             const imageInnerContainerElement = document.createElement('div');
+            imageInnerContainerElement.style.minHeight = '200px';
             imageInnerContainerElement.classList.add('image-inner-container');
 
             const imageElement = document.createElement('img');
@@ -297,6 +273,8 @@ async function displayContent() {
         MAIN_CONTENT_SECTION.appendChild(parentElement);
 
         colorizeCode();
+
+        cache[sectionName + currentPosition.sectionItemIndex] = parentElement;
     } else {
         const logoFileName = `images/logo${Math.floor(Math.random() * 4) + 1}.svg`;
         const logoContainer = document.createElement('div');
@@ -372,15 +350,18 @@ async function displayContent() {
 // HACK: CSS stands for Constant Source of Suffering
 function setSkillsDecorativeTextsPosition() {
     const reposition = () => {
-        if (isMobile()) {
-            return;
-        }
 
         const skillsTitleElement = document.getElementById('skills-title');
         const skillsItemIndexElement = document.getElementById('skills-index')
         const firstSkillElement = document.getElementById('skills')
             .getElementsByClassName('ui-list')[0]
             ?.firstElementChild;
+
+        if (isMobile()) {
+            skillsTitleElement.style = "";
+            skillsItemIndexElement.style = "";
+            return;
+        }
 
         if (skillsTitleElement == null
             || skillsItemIndexElement == null
@@ -390,7 +371,12 @@ function setSkillsDecorativeTextsPosition() {
         }
         const skillsTitleElementHeight = skillsTitleElement.clientHeight;
 
+        console.log(skillsItemIndexElement.getBoundingClientRect().bottom)
+        console.log(SKILLS_SECTION.getBoundingClientRect().bottom)
+        console.log(skillsItemIndexElement.clientHeight)
+
         skillsTitleElement.style.top = `${firstSkillElement.offsetTop - skillsTitleElementHeight}px`;
+        // FIXME: using the element's bottom is not a good idea
         skillsItemIndexElement.style.bottom =
             `${(skillsItemIndexElement.getBoundingClientRect().bottom -
                 SKILLS_SECTION.getBoundingClientRect().bottom) -
@@ -403,10 +389,6 @@ function setSkillsDecorativeTextsPosition() {
 }
 
 async function init() {
-
-    await populateSection('skills');
-    await populateSection('experience');
-    await populateSection('projects');
 
     initKeyboardListeners();
     initMouseListeners();
@@ -482,6 +464,7 @@ async function render(scrollToTop = false, isInitialRender = false) {
             `${currentPosition.sectionItemIndex + 1} of ${currentSection.items.length}`;
     }
 
+    // FIXME: doesn't work anymore
     if (scrollableContainerElement != null && currentSectionItemElement != null) {
         if (!isVisibleInScrollView(currentSectionItemElement, scrollableContainerElement)
             && previousPosition.sectionItemIndex !== currentPosition.sectionItemIndex) {
