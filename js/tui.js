@@ -346,7 +346,10 @@ async function displayContent() {
 }
 
 // HACK: CSS stands for Constant Source of Suffering
-function setSkillsDecorativeTextsPosition() {
+async function setSkillsDecorativeTextsPosition() {
+    // layout switch causes error in calculation
+    await document.fonts.ready;
+
     const reposition = () => {
 
         const skillsTitleElement = document.getElementById('skills-title');
@@ -405,9 +408,10 @@ async function init() {
     initMouseListeners();
     initTouchListeners();
 
-    setSkillsDecorativeTextsPosition();
 
     await render(true, true);
+
+    await setSkillsDecorativeTextsPosition();
 }
 
 function clearSelectionStyling(scrollToTop) {
@@ -489,8 +493,9 @@ async function render(scrollToTop = false, isInitialRender = false) {
         }
     }
 
-    displayContent();
-
+    if (!isInitialRender) {
+        displayContent();
+    }
 
     if (isMobile()) {
         clearSelectionStyling()
