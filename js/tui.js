@@ -254,6 +254,7 @@ async function displayContent() {
             imageInnerContainerElement.classList.add('image-inner-container');
 
             const imageElement = document.createElement('img');
+            imageElement.loading = 'lazy'
             imageElement.src = `../images/${imagePath}`;
             imageElement.classList.add('project-image');
 
@@ -302,6 +303,7 @@ async function displayContent() {
         logoContainer.id = 'logo-container';
 
         const logoElement = document.createElement('img');
+        logoElement.loading = 'eager'
         logoElement.src = logoFileName;
         logoElement.id = 'logo';
         logoElement.alt = 'Wallenart'
