@@ -1,17 +1,13 @@
 @font-face {
     font-family: "Fira Mono";
+    font-display: swap;
     src: url("../fonts/FiraMonoNerdFontMono-Regular.otf") format("opentype");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Fira Mono";
-    src: url("../fonts/FiraMonoNerdFontMono-Medium.otf") format("opentype");
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "Fira Mono";
+    font-display: swap;
     src: url("../fonts/FiraMonoNerdFontMono-Bold.otf") format("opentype");
     font-weight: bold;
 }
