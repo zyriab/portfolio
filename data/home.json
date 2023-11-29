@@ -20,8 +20,8 @@
         },
         {
             "content": [
-                "Feel free to connect on <a href=\"https://www.linkedin.com/in/arthur-wallendorff/\" target=\"_blank\" class=\"text-blue\">LinkedIn</a> or check out my work on <a href=\"https://www.github.com/ZyriabDsgn/\" target=\"_blank\" class=\"text-orange\">GitHub</a>",
-                "You can find my resumé over here: <a href=\"#\" class=\"text-orange\">resumé</a> <a class=\"text-xs text-blue\" href=\"#\">&lt;printable version&gt;</a>"
+                "Feel free to connect on <a href=\"https://www.linkedin.com/in/arthur-wallendorff/\" target=\"_blank\" class=\"text-blue\">LinkedIn</a> or check out my work on <a href=\"https://www.github.com/ZyriabDsgn/\" target=\"_blank\" class=\"text-pink\">GitHub</a>",
+                "You can find my resumé over here => <a href=\"/wallendorff-arthur-resume.pdf\" class=\"text-orange\">resumé</a>"
             ]
         },
         {
