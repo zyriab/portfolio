@@ -10,8 +10,9 @@ const PROJECTS_SECTION = document.getElementById('projects');
 const FOOTER_SECTION = document.getElementById('footer');
 const MAIN_CONTENT_SECTION = document.getElementById('main-content')?.getElementsByClassName('container-content')[0];
 
-// TODO: replace the colors at each render even when cached?
+const IS_DEV = window.location.hostname === 'localhost';
 
+// TODO: replace the colors at each render even when cached?
 const COLORS = ['text-blue', 'text-orange', 'text-pink'];
 
 const cache = {}
@@ -381,7 +382,24 @@ function setSkillsDecorativeTextsPosition() {
     addEventListener('resize', reposition);
 }
 
+function setEnvironmentFiles() {
+    if (!IS_DEV) {
+        return;
+    }
+
+    const stylesheetElement = document.getElementById('stylesheet');
+    const scriptElement = document.getElementById('script');
+
+    if (stylesheetElement == null || scriptElement == null) {
+        throw new Error('stylesheet or script element not found');
+    }
+
+    stylesheetElement.href = 'css/tui.css';
+    scriptElement.src = 'js/tui.js';
+}
+
 async function init() {
+    setEnvironmentFiles();
 
     initKeyboardListeners();
     initMouseListeners();
