@@ -129,8 +129,6 @@ function isVisibleInScrollView(element, container) {
 
     const isVisible = elementTop >= containerTop && elementBottom <= containerBottom
 
-    console.log(isVisible)
-
     return isVisible;
 };
 
@@ -141,7 +139,6 @@ async function displayContent() {
 
 
     if (cache[sectionName + currentPosition.sectionItemIndex] != null) {
-        console.log('using cache')
         MAIN_CONTENT_SECTION.appendChild(cache[sectionName +
             currentPosition.sectionItemIndex]);
         return;
@@ -370,10 +367,6 @@ function setSkillsDecorativeTextsPosition() {
             return;
         }
         const skillsTitleElementHeight = skillsTitleElement.clientHeight;
-
-        console.log(skillsItemIndexElement.getBoundingClientRect().bottom)
-        console.log(SKILLS_SECTION.getBoundingClientRect().bottom)
-        console.log(skillsItemIndexElement.clientHeight)
 
         skillsTitleElement.style.top = `${firstSkillElement.offsetTop - skillsTitleElementHeight}px`;
         // FIXME: using the element's bottom is not a good idea
