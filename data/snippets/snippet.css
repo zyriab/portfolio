@@ -1,0 +1,38 @@
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    margin-top: 0.5rem; 
+    font-size: 0.8rem;
+}
+
+#home-section-paragraph {
+    padding: 0 0.2rem;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 0.1px solid #c9d1d9;
+    position: relative;
+    padding: 0.2rem 0;
+}
+
+#left-section .container:hover:not(.selected-frame) {
+    border-color: #8090a8;
+}
+
+.container-content {
+    display: flex;
+    padding: 0.2rem;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

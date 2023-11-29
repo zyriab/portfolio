@@ -1,0 +1,64 @@
+input FileInput {
+  fileName: String!
+  path: String!
+  root: String
+  versionId: String
+  bucketName: String
+}
+
+input FilesInput {
+  fileNames: [String!]!
+  path: String!
+  root: String
+  versionIds: [String!]
+  bucketName: String
+}
+
+input DirectoryInput {
+  path: String!
+  root: String
+  bucketName: String
+}
+
+union ListBucketResult =
+    ObjectList
+  | Unauthenticated
+  | Unauthorized
+  | StorageNotFound
+  | ServerError
+
+union DeleteFileResult =
+    FileName
+  | FileNameList
+  | Unauthenticated
+  | Unauthorized
+  | StorageNotFound
+  | FileNotFound
+  | ServerError
+
+union DeleteDirectoryResult =
+    Directory
+  | Unauthenticated
+  | Unauthorized
+  | StorageNotFound
+  | FileNotFound
+  | ServerError
+
+type Queries {
+  listBucketContent(listInput: ListInput!): ListBucketResult!
+  getUploadUrl(uploadInput: UploadInput!): SignedUrlResult!
+  getDownloadUrl(fileInput: FileInput!): SignedUrlResult!
+  getTextFileContent(fileInput: FileInput!): TextFileContentResult!
+}
+
+type Mutations {
+  deleteOneFile(fileInput: FileInput!): DeleteFileResult
+  deleteManyFiles(filesInput: FilesInput!): DeleteFileResult
+  deleteDirectory(directoryInput: DirectoryInput): DeleteDirectoryResult
+  restoreFileVersion(fileInput: FileInput!): RestoreFileResult
+}
+
+schema {
+  query: Queries
+  mutation: Mutations
+}
