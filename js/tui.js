@@ -180,6 +180,7 @@ function isVisibleInScrollView(element, container) {
 
 async function displayContent() {
     MAIN_CONTENT_SECTION.innerHTML = '';
+    MAIN_CONTENT_SECTION.scrollTo({ top: 0 });
 
     const sectionName = left_sections[currentPosition.sectionIndex].name;
 
@@ -391,6 +392,7 @@ async function setSkillsDecorativeTextsPosition() {
     addEventListener('resize', reposition);
 }
 
+// FIXME: doesn't seem to work
 function setEnvironmentFiles() {
     if (!IS_DEV) {
         return;
