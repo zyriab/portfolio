@@ -1,5 +1,3 @@
-@import "https://www.nerdfonts.com/assets/css/webfont.css";
-
 @font-face {
   font-display: swap;
   font-family: 'Fira Mono';
@@ -48,7 +46,6 @@ body {
     color: #c9d1d9;
 }
 
-/* Scrollbar */
 *::-webkit-scrollbar {
     width: 0.4em;
     background-color: #0d1117;
@@ -227,7 +224,6 @@ pre {
 
 .h-auto {
     height: fit-content;
-    /* flex-grow: 1; */
 }
 
 .h-fill {
@@ -502,7 +498,6 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
     }
 
     .footer-item {
-        /* justify-content: center; */
         gap: 1rem;
     }
 
