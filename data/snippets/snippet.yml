@@ -9,13 +9,34 @@ jobs:
   deploy_lambda:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Auto Minify
-        uses: nizarmah/auto-minify@v2.1
-
-      - name: Auto committing minified files
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: 'Checking out code'
+        uses: actions/checkout@v2
+      - name: 'Setting up Nodejs environment'
+        uses: actions/setup-node@v2
         with:
-          commit_message: "Github Action: Auto Minified JS and CSS files"
-          branch: ${{ github.ref }}
+          node-version: '16'
+      - name: 'Configuring AWS Credentials'
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+      - name: 'Installing dependencies'
+        env:
+          CI: true
+        run: npm ci
+      - name: 'Checking TS'
+        run: npm run check
+      - name: 'Linting code'
+        run: npm run lint
+      - name: 'Running tests'
+        env:
+          NAMESPACE: ${{ secrets.NAMESPACE }}
+          AES_KEY: ${{ secrets.AES_KEY }}
+        run: npm test
+      - name: 'Bundling files'
+        run: npx ncc build src/index.ts
+      - name: 'Zipping bundled file'
+        run: zip -j deploy.zip ./dist/*
+      - name: 'Deploying to AWS Lambda'
+        run: aws lambda update-function-code --function-name=buckaroo --zip-file=fileb://deploy.zip
