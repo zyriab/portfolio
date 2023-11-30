@@ -5,17 +5,16 @@ on:
       - main 
 
 jobs:
-  build:
+  deploy_lambda:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.ref }}
 
-      - name: Minify Action
-        uses: anthonyftwang/minify-action@v1.0.1
+      - name: Auto Minify
+        uses: nizarmah/auto-minify@v2.1
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Auto committing minified files
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Minify source code
+          commit_message: "Github Action: Auto Minified JS and CSS files"
           branch: ${{ github.ref }}
