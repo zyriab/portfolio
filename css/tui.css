@@ -1,15 +1,19 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
 @font-face {
-    font-family: "Fira Mono";
-    font-display: swap;
-    src: url("../fonts/FiraMonoNerdFontMono-Regular.otf") format("opentype");
-    font-weight: normal;
+  font-display: swap;
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/fira-mono-v14-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: "Fira Mono";
-    font-display: swap;
-    src: url("../fonts/FiraMonoNerdFontMono-Bold.otf") format("opentype");
-    font-weight: bold;
+  font-display: swap;
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/fira-mono-v14-latin-700.woff2') format('woff2'); 
 }
 
 * {
