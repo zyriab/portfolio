@@ -21,7 +21,7 @@
             "year": 2023,
             "githubUrl": "https://github.com/ZyriabDsgn/npm-dap.nvim",
             "images": [
-                "../images/npm-dap.png"
+                "../images/npm-dap.webp"
             ],
             "content": [
                 "npm-dap.nvim is a {{Neovim}} plugin that I built in order to {{debug}} {{Node.js}} applications using the {{DAP}} protocol through a {{user-friendly}} UI inspired by {{VSCode}}.\nIt is my first Neovim {{plugin}} already proved quite useful when working with {{Node.js}} in professinal settings."
@@ -34,9 +34,9 @@
         {
             "name": "ShopiCSV",
             "images": [
-                "../images/shopicsv1.jpg",
-                "../images/shopicsv2.jpg",
-                "../images/shopicsv3.jpg"
+                "../images/shopicsv1.webp",
+                "../images/shopicsv2.webp",
+                "../images/shopicsv3.webp"
             ],
             "year": 2022,
             "demoUrl": "https://www.shopicsv.app",
@@ -58,7 +58,7 @@
         {
             "name": "nouvell",
             "images": [
-                "../images/nouvell.png"
+                "../images/nouvell.webp"
             ],
             "year": 2022,
             "githubUrl": "https://www.github.com/ZyriabDsgn/nouvell",
@@ -80,7 +80,7 @@
         {
             "name": "Buckaroo",
             "images": [
-                "../images/buckaroo.png"
+                "../images/buckaroo.webp"
             ],
             "year": 2022,
             "githubUrl": "https://www.github.com/ZyriabDsgn/Buckaroo",
@@ -102,8 +102,8 @@
         {
             "name": "Polaris File Explorer",
             "images": [
-                "../images/pfx1.jpg",
-                "../images/pfx2.jpg"
+                "../images/pfx1.webp",
+                "../images/pfx2.webp"
             ],
             "year": 2022,
             "demoUrl": "https://demo.shopicsv.app/",
@@ -120,8 +120,8 @@
         {
             "name": "Plankton Synapse",
             "images": [
-                "../images/plankton1.jpg",
-                "../images/plankton2.jpg"
+                "../images/plankton1.webp",
+                "../images/plankton2.webp"
             ],
             "year": 2018,
             "demoUrl": "https://zyriabdsgn.github.io/Plankton-Synapse/",

@@ -275,6 +275,8 @@ async function displayContent() {
 
             const imageElement = document.createElement('img');
             imageElement.loading = 'lazy'
+            imageElement.alt = 'Project image';
+            imageElement.decoding = 'async';
             imageElement.src = `../images/${imagePath}`;
             imageElement.classList.add('project-image');
 
