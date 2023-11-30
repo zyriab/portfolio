@@ -39,7 +39,7 @@
                 "TypeScript is JavaScript with {{types}}. It is used to {{prevent}} errors and make JavaScript {{predictable}}.",
                 "As you can see in the code snippet below, it is almost {{identical}} to JavaScript. The only difference is that it has {{types}} and a few other {{goodies}} sprinkled around for good measure.\nI have been using TypeScript for over {{2 years}} and I am very familiar with it.",
                 "If I have time to setup a {{build pipeline}} and I want to make sure that my code is {{robust}} and {{predictable}}, I will use TypeScript over JavaScript.",
-                "{{Types}} represent the {{intent}} of the programmer. They are a {{contract}} between the programmer and the compiler/transpiler.\nThey make working and maintaining bigger software much easier and {{safe}}.\n{{Transitioning}} from JavaScript to TypeScript was very {{easy}} since most of my past experience has been with {{strongly typed}} languages, programming without types actually feel {{weird}} to me.",
+                "{{Types}} represent the {{intent}} of the programmer. They are a {{contract}} between the programmer and the compiler/transpiler.\nThey make working and maintaining bigger software much easier and {{safe}}.\n{{Transitioning}} from JavaScript to TypeScript was very {{easy}} since most of my past experience has been with {{strongly typed}} languages, programming without types actually feels {{weird}} to me.",
                 "If I were {{Tenzing Norgay}}, TypeScript would be my {{belay device}}."
             ],
             "snippet": "ts"
@@ -69,7 +69,6 @@
             "name": " PostgreSQL",
             "content": [
                 "PostgreSQL or Postgres is a {{relational database}}. It is used to {{store}} and {{retrieve}} data.\n A relational database is a type of database that {{organizes}} data into tables, which are {{structured collections}} of records or {{rows}}, each containing a set of attributes or {{columns}}.",
-                "The advantage of a relational database is that it is {{flexible}} and {{scalable}}.\nIt is {{flexible}} because you can {{add}} and {{remove}} columns from a table without having to {{migrate}} the data.\nIt is {{scalable}} because you can {{split}} the data into {{multiple}} tables and {{join}} them together when you need to {{retrieve}} it.",
                 "To interact with a relational database, you need to use a {{query language}} called {{SQL}}.\nSQL is a {{declarative}} language, meaning that you {{declare}} what you want to {{retrieve}} and the database {{figures out}} how to do it.",
                 "I have been using PostgreSQL for about {{1 year}} and I am still learning a lot about it. I have used it to build the backend of {{web apps}} and {{mobile apps}}.",
                 "If I were {{King George V}}, PostgreSQL would be my {{Merchant Navy}}."
@@ -82,7 +81,7 @@
                 "Automated testing is the {{process}} of {{writing}} and {{running}} tests {{automatically}}.\nIt is used to {{prevent}} bugs and {{ensure}} that the software is {{working}} as {{intended}}.",
                 "There are many types of automated tests, the most common ones are {{unit tests}}, {{integration tests}} and {{end-to-end tests}}.",
                 "Unit tests are used on a {{single}} unit of code, usually a {{function}} or a {{class}}.\nIntegration tests are used to check the {{interaction}} between {{multiple}} units of code.\nEnd-to-end tests are used to poke at the {{whole}} software, from the {{user interface}} to the {{database}}.",
-                "I have been using automated testing for over {{2 years}} and I am quite familiar with it.\nThe tools I mostly use to write tests are {{Jest}} and {{Playwright}} although when available, I like use a language's standard testing tools.",
+                "I have been using automated testing for over {{2 years}} and I am quite familiar with it.\nThe tools I mostly use to write tests are {{Jest}} and {{Playwright}} although when available, I like to use a language's standard testing tools.",
                 "If I were {{Leonardo da Vinci}}, automated testing would be my {{sketchbook}}."
             ],
             "snippet": "test"
@@ -134,7 +133,7 @@
             "content": [
                 "Git is a {{version control system}}. It is used to {{track}} and {{manage}} changes to {{files}}.\nIt's useful to {{collaborate}} on {{projects}} and {{keep track}} of {{changes}}.",
                 "I have been using Git for over {{10 years}} and I am very familiar with it.\nI have used it to {{collaborate}} on {{projects}} with {{teams}} of {{various sizes}} as well as {{manage}} my own personal projects.",
-                "Git is a {{very powerful}} tool that can be used to {{track}} and {{manage}} almost anything, not just code!.",
+                "Git is a {{very powerful}} tool that can be used to {{track}} and {{manage}} almost anything, not just code!",
                 "If I were {{Hermes}}, Git would be my {{winged sandals}}."
             ],
             "snippet": null
