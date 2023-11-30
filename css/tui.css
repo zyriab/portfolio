@@ -265,6 +265,19 @@ pre {
     overflow-y: auto;
 }
 
+.ui-list div {
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ui-list img {
+    width: 1rem;
+    height: 1rem;
+}
+
 .ui-list div:hover:not(.selected-item) {
     background-color: #141a24;
 }
