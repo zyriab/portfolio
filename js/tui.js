@@ -658,9 +658,6 @@ function initTouchListeners() {
     });
 }
 
-init();
-
-
 /** HIGHLIGHTING STUFF **/
 const javascriptKeywords = [
     ['colorizeCode', 'getCodeSnippet', 'javascript', 'typescript', 'html',
