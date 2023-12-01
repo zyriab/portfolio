@@ -189,6 +189,8 @@ async function displayContent() {
         return;
     }
 
+    MAIN_CONTENT_SECTION.innerHTML = '<div id="load-container">Loading...</div>';
+
     const response = await fetch(`data/${sectionName}.json`)
     const { data } = await response.json();
 
@@ -312,6 +314,8 @@ async function displayContent() {
             innerContainerElement.appendChild(snippetContainerElement);
         }
 
+        MAIN_CONTENT_SECTION.innerHTML = '';
+
         innerContainerElement.prepend(topElement);
         outerContainerElement.appendChild(innerContainerElement);
         MAIN_CONTENT_SECTION.appendChild(outerContainerElement);
@@ -344,6 +348,8 @@ async function displayContent() {
 
             innerContainerElement.appendChild(element);
         })
+
+        MAIN_CONTENT_SECTION.innerHTML = '';
 
         outerContainerElement.appendChild(innerContainerElement);
         MAIN_CONTENT_SECTION.appendChild(outerContainerElement);
