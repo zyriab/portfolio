@@ -111,7 +111,7 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
-        overflow-y: hidden;
+    overflow-y: hidden;
 }
 
 #main-content .container-content {
@@ -151,7 +151,8 @@ svg {
     flex-direction: column;
     border: 0.1px solid #c9d1d9;
     position: relative;
-    padding: 0.2rem 0;
+    padding-top: 0.2rem;
+    height: 33%;
 }
 
 #left-section .container:hover:not(.selected-frame) {
@@ -162,8 +163,7 @@ svg {
     display: flex;
     padding: 0.2rem;
     flex-direction: column;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .outer-paragraph-container {
@@ -239,11 +239,24 @@ pre {
 }
 
 .decorating-text {
+    position: absolute;
     padding: 0 0.1rem;
     width: fit-content;
+}
+
+.decorating-text p {
+    position: relative;
+    z-index: 2;
+}
+
+.decorating-text div {
+    position: relative;
+    z-index: 1;
     background-color: #0d1117;
-    position: absolute;
-    height: 2ch;
+    height: 0.5ch;
+    top: -1ch;
+    left: -2px;
+    width: 104%;
 }
 
 .title {
@@ -251,20 +264,38 @@ pre {
 }
 
 .list-index {
-    bottom: -10px;
+    bottom: -12px;
     align-self: flex-end;
 }
 
 .ui-list {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 99%;
     padding: 0.2rem;
     overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#experience .ui-list {
+    justify-content: space-between;
+}
+
+#experience .ui-list div {
+    width: 100%;
+    text-wrap: balance;
+}
+
+#experience .ui-list div div {
+    width: 50%;
+    justify-content: flex-start;
+    gap: 1rem;
 }
 
 .ui-list div {
     display: flex;
     flex-direction: row;
-    justify-self: flex-start;
     align-items: center;
     gap: 0.5rem;
 }
@@ -274,7 +305,7 @@ pre {
     height: 1rem;
 }
 
-.ui-list div:hover:not(.selected-item) {
+.ui-list div:hover:not(.selected-item):not(.selected-item div) {
     background-color: #141a24;
 }
 
@@ -294,7 +325,7 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
     background-color: #79c0ff;
 }
 
-.selected-item {
+.selected-item, .selected-item div{
     background-color: #1e4273;
 }
 
@@ -382,15 +413,11 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
     display: none;
 }
 
-@media screen and (min-width: 769px) {
-    #skills {
-        overflow: hidden;
-        position: static;
-        min-height: 100px;
-    }
-}
-
 @media screen and (max-width: 768px) {
+    #experience .ui-list div {
+        align-items: center;
+    }
+
     .buttons-container {
         flex-direction: column;
     }
