@@ -352,46 +352,6 @@ async function displayContent() {
     }
 }
 
-// HACK: CSS stands for Constant Source of Suffering
-async function setSkillsDecorativeTextsPosition() {
-    // layout switch causes error in calculation
-    // so we wait for the fonts to be loaded
-    await document.fonts.ready;
-
-    const reposition = () => {
-
-        const skillsTitleElement = document.getElementById('skills-title');
-        const skillsItemIndexElement = document.getElementById('skills-index')
-        const firstSkillElement = document.getElementById('skills')
-            .getElementsByClassName('ui-list')[0]
-            ?.firstElementChild;
-
-        if (isMobile()) {
-            skillsTitleElement.style = "";
-            skillsItemIndexElement.style = "";
-            return;
-        }
-
-        if (skillsTitleElement == null
-            || skillsItemIndexElement == null
-            || firstSkillElement == null
-            || SKILLS_SECTION == null) {
-            return;
-        }
-        const skillsTitleElementHeight = skillsTitleElement.clientHeight;
-
-        skillsTitleElement.style.top = `${firstSkillElement.offsetTop - skillsTitleElementHeight}px`;
-        skillsItemIndexElement.style.bottom =
-            `${(skillsItemIndexElement.getBoundingClientRect().bottom -
-                SKILLS_SECTION.getBoundingClientRect().bottom) -
-            skillsItemIndexElement.clientHeight}px`
-    }
-
-    reposition();
-
-    addEventListener('resize', reposition);
-}
-
 async function init() {
     initKeyboardListeners();
     initMouseListeners();
@@ -399,7 +359,6 @@ async function init() {
 
     await render(true, true);
     await displayRandomBibleVerse();
-    await setSkillsDecorativeTextsPosition();
 }
 
 function clearSelectionStyling(scrollToTop) {
