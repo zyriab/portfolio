@@ -171,9 +171,7 @@ function isVisibleInScrollView(element, container) {
     const containerTop = container.scrollTop;
     const containerBottom = containerTop + container.clientHeight;
 
-    const isVisible = elementTop >= containerTop && elementBottom <= containerBottom
-
-    return isVisible;
+    return elementTop >= containerTop && elementBottom <= containerBottom
 };
 
 async function displayContent() {
@@ -381,7 +379,8 @@ function clearSelectionStyling(scrollToTop) {
         previousSection.items[previousPosition.sectionItemIndex];
 
     const previousSectionItemIndexElement =
-        previousSection.section.getElementsByClassName("list-index")[0]
+        previousSection.section.getElementsByClassName('list-index')[0]
+            ?.firstElementChild;
 
     const scrollableContainerElement =
         previousSection.section.getElementsByClassName('ui-list')[0];
@@ -412,6 +411,7 @@ async function render(scrollToTop = false, isInitialRender = false) {
 
     const currentSectionItemIndexElement =
         currentSection.section.getElementsByClassName("list-index")[0]
+            ?.firstElementChild
 
     const scrollableContainerElement =
         currentSection.section.getElementsByClassName('ui-list')[0];
@@ -426,16 +426,19 @@ async function render(scrollToTop = false, isInitialRender = false) {
             `${currentPosition.sectionItemIndex + 1} of ${currentSection.items.length}`;
     }
 
-    // FIXME: doesn't work anymore
     if (scrollableContainerElement != null && currentSectionItemElement != null) {
         if (!isVisibleInScrollView(currentSectionItemElement, scrollableContainerElement)
             && previousPosition.sectionItemIndex !== currentPosition.sectionItemIndex) {
+            const gap =
+                parseInt(window.getComputedStyle(currentSectionItemElement).gap)
+
             scrollableContainerElement.scrollBy({
                 top:
                     previousPosition.sectionItemIndex <
                         currentPosition.sectionItemIndex
-                        ? currentSectionItemElement.clientHeight
-                        : -currentSectionItemElement.clientHeight
+                        ? currentSectionItemElement.clientHeight + gap
+                        : -currentSectionItemElement.clientHeight - gap,
+                // behavior: 'instant'
             });
         }
     }
@@ -605,16 +608,6 @@ function initTouchListeners() {
     if (!isMobile()) {
         return;
     }
-
-    const modalCloseButtonElement = document.getElementById('modal-controls').firstElementChild;
-
-    if (modalCloseButtonElement == null) {
-        throw new Error('Modal close button not found');
-    }
-
-    modalCloseButtonElement.addEventListener('click', () => {
-        closeModal();
-    });
 }
 
 /** HIGHLIGHTING STUFF **/

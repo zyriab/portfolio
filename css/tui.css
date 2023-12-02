@@ -433,8 +433,7 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
     body {
         overflow-y: scroll;
         height: 100%;
-        padding: 2vh 2vw;
-        margin-top: 0.5rem;
+        padding: 2vw;
     }
 
     #main-container {
@@ -449,13 +448,12 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
     #left-section {
         width: 100%;
         gap: 1.2rem;
+        display: none
     }
 
     #right-section {
         width: 100%;
         height: 100%;
-        overflow-y: scroll;
-        z-index: 1;
         left: 0;
         top: 0;
     }
@@ -481,9 +479,6 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
     }
 
     #main-content {
-        background-color: #0d1117;
-        margin: 5%;
-        justify-content: end;
         font-size: 1.2rem;
     }
 
@@ -495,6 +490,10 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
         margin-top: 1rem;
         font-size: 1.1rem;
         display: block;
+    }
+
+    #desktop-help {
+        display: none;
     }
 
     #main-content .container-content {
