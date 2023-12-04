@@ -569,9 +569,9 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
         opacity: 0;
         z-index: 5;
         background: transparent;
-     box-shadow: none;
-     outline: none!important;
-     -webkit-tap-highlight-color: transparent!important;
+        box-shadow: none;
+        outline: none!important;
+        -webkit-tap-highlight-color: transparent!important;
     }
 
     .nav-container .hamburger-lines {

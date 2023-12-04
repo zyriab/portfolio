@@ -10,7 +10,6 @@ const PROJECTS_SECTION = document.getElementById('projects');
 const FOOTER_SECTION = document.getElementById('footer');
 const MAIN_CONTENT_SECTION = document.getElementById('main-content')?.getElementsByClassName('container-content')[0];
 
-// TODO: replace the colors at each render even when cached?
 const COLORS = ['text-blue', 'text-orange', 'text-pink'];
 
 const cache = {}
