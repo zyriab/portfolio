@@ -174,6 +174,27 @@ function isVisibleInScrollView(element, container) {
     return elementTop >= containerTop && elementBottom <= containerBottom
 };
 
+function onHamburgerMenuPress() {
+    const hamburgerButtonElement =
+        document.getElementsByName('hamburger-toggle')[0];
+    const navContainerElement =
+        document.getElementsByClassName('nav-container')[0];
+
+    if (hamburgerButtonElement.checked) {
+        LEFT_SECTION.classList.add('menu-open');
+        navContainerElement.style.opacity = 1;
+    } else {
+        LEFT_SECTION.classList.remove('menu-open');
+        navContainerElement.style.opacity = 0.9;
+    }
+}
+
+function closeHamburgerMenu() {
+    const hamburgerButtonElement = document.getElementsByName('hamburger-toggle')[0];
+    hamburgerButtonElement.checked = false;
+    LEFT_SECTION.classList.remove('menu-open');
+}
+
 async function displayContent() {
     MAIN_CONTENT_SECTION.innerHTML = '';
     MAIN_CONTENT_SECTION.scrollTo({ top: 0 });
@@ -350,15 +371,6 @@ async function displayContent() {
     }
 }
 
-async function init() {
-    initKeyboardListeners();
-    initMouseListeners();
-    initTouchListeners();
-
-    await render(true, true);
-    await displayRandomBibleVerse();
-}
-
 function clearSelectionStyling(scrollToTop) {
     if (isMobile()) {
         const selectedElement = document.getElementsByClassName('selected-item')[0];
@@ -426,6 +438,8 @@ async function render(scrollToTop = false, isInitialRender = false) {
             `${currentPosition.sectionItemIndex + 1} of ${currentSection.items.length}`;
     }
 
+    // FIXME: not optimal, sometimes, jumps a bit too far
+    // but it doesn't impair the user experience too much
     if (scrollableContainerElement != null && currentSectionItemElement != null) {
         if (!isVisibleInScrollView(currentSectionItemElement, scrollableContainerElement)
             && previousPosition.sectionItemIndex !== currentPosition.sectionItemIndex) {
@@ -438,7 +452,7 @@ async function render(scrollToTop = false, isInitialRender = false) {
                         currentPosition.sectionItemIndex
                         ? currentSectionItemElement.clientHeight + gap
                         : -currentSectionItemElement.clientHeight - gap,
-                // behavior: 'instant'
+                behavior: 'instant'
             });
         }
     }
@@ -448,11 +462,7 @@ async function render(scrollToTop = false, isInitialRender = false) {
     }
 
     if (isMobile()) {
-        clearSelectionStyling()
-    }
-
-    if (!isInitialRender) {
-        openModal();
+        closeHamburgerMenu()
     }
 }
 
@@ -468,7 +478,6 @@ function goToSection(sectionNumber, itemNumber = 0) {
         clamp(0, sectionNumber, left_sections.length - 1);
     currentPosition.sectionItemIndex =
         clamp(0, itemNumber, left_sections[currentPosition.sectionIndex].items.length - 1);
-
 }
 
 function goToNextSection() {
@@ -511,32 +520,6 @@ function scrollMainContentUp() {
     MAIN_CONTENT_SECTION?.scrollBy({
         top: -(MAIN_CONTENT_SECTION.clientHeight / 2)
     });
-}
-
-function openModal() {
-    if (!isMobile()) {
-        return;
-    }
-
-    const modalElement = document.getElementById('right-section');
-    modalElement.classList.remove('modal-close');
-    modalElement.classList.add('modal-open');
-
-    document.body.style.position = 'fixed';
-}
-
-function closeModal() {
-    if (!isMobile()) {
-        return;
-    }
-
-    clearSelectionStyling()
-
-    const modalElement = document.getElementById('right-section');
-    modalElement.classList.remove('modal-open');
-    modalElement.classList.add('modal-close');
-
-    document.body.style.position = 'static';
 }
 
 function initKeyboardListeners() {
@@ -608,7 +591,23 @@ function initTouchListeners() {
     if (!isMobile()) {
         return;
     }
+
+    const hamburgerButtonElement = document.getElementsByName('hamburger-toggle')[0];
+
+    hamburgerButtonElement.addEventListener('click', () => {
+        onHamburgerMenuPress();
+    })
 }
+
+async function init() {
+    initKeyboardListeners();
+    initMouseListeners();
+    initTouchListeners();
+
+    await render(true, true);
+    await displayRandomBibleVerse();
+}
+
 
 /** HIGHLIGHTING STUFF **/
 const javascriptKeywords = [
@@ -622,8 +621,7 @@ const javascriptKeywords = [
 
 const typescriptKeywords = [
     [...javascriptKeywords[0],],
-    [...javascriptKeywords[1], 'void', 'string'
-    ],
+    [...javascriptKeywords[1], 'void', 'string'],
     [...javascriptKeywords[2], 'Promise'],
 ];
 
