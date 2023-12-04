@@ -308,7 +308,7 @@ pre {
     height: 1rem;
 }
 
-.ui-list div:hover:not(.selected-item) {
+.ui-list div:hover:not(.selected-item):not(.selected-item div) {
     background-color: #141a24;
 }
 
@@ -329,7 +329,7 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
 }
 
 .selected-item, .selected-item div{
-    background-color: #1e4273!important;
+    background-color: #1e4273;
 }
 
 .text-orange {
