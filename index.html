@@ -23,6 +23,17 @@
 
 <body class="darkmode">
     <div id="main-container">
+        <div class="nav-container">
+            <img id="nav-logo" loading="eager" src="images/logo2.svg" alt="Wallenart" decoding="async" />
+            <div id="hamburger-menu">
+                <input class="checkbox" type="checkbox" name="hamburger-toggle" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </div>
+        </div>
         <div id="section-container">
             <div id="left-section">
                 <header class="container selected-frame" id="home">
@@ -47,7 +58,6 @@
                     <div class="container-content">
                         <div id="experience-title" class="title decorating-text">
                             <p>
-
                                 Experience
                             </p>
                             <div></div>
@@ -156,16 +166,11 @@
                     </div>
                 </div>
             </div>
-            <div id="right-section" class="modal-close">
+            <div id="right-section">
                 <div class="container h-fill" id="main-content">
-                    <div id="modal-controls">
-                        <button type="button">
-                            X
-                        </button>
-                    </div>
                     <div class="container-content">
-                        <div id="logo-container"><img loading="eager" src="images/logo2.svg" id="logo" alt="Wallenart"
-                                decoding="async">
+                        <div id="logo-container">
+                            <img loading="eager" src="images/logo2.svg" id="logo" alt="Wallenart" decoding="async" />
                         </div>
                         <div class="outer-paragraph-container">
                             <div class="inner-paragraph-container">
@@ -201,10 +206,10 @@
                                     <p>You can find my resumé over here =&gt; <a href="/wallendorff-arthur-resume.pdf"
                                             target="_blank" class="text-orange">resumé</a> <a
                                             href="/wallendorff-arthur-resume-printable.pdf" class="text-pink text-xs"
-                                            target="_blank">&lt;printable
-                                            version&gt;</a></p>
+                                            target="_blank">&lt;printable version&gt;</a>
+                                    </p>
                                 </div>
-                                <div>
+                                <div id="desktop-help">
                                     <p><span class="text-pink">Click</span> on a section on the left to learn
                                         more about
                                         my <span class="text-blue">work</span> and past <span
@@ -214,6 +219,13 @@
                                         the <span class="text-blue">arrow keys</span> or <span class="text-orange">Vim
                                             motions</span>.</p>
                                 </div>
+                                <p id="mobile-help">
+                                    <span class="text-pink">Press</span> the menu button at the top-right of the
+                                    screen
+                                    to
+                                    start <span class="text-orange">exploring</span>
+                                    the website.
+                                </p>
                                 <div class="bible-verse">
                                 </div>
                             </div>
