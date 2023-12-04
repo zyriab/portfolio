@@ -171,10 +171,29 @@ function isVisibleInScrollView(element, container) {
     const containerTop = container.scrollTop;
     const containerBottom = containerTop + container.clientHeight;
 
-    const isVisible = elementTop >= containerTop && elementBottom <= containerBottom
-
-    return isVisible;
+    return elementTop >= containerTop && elementBottom <= containerBottom
 };
+
+function onHamburgerMenuPress() {
+    const hamburgerButtonElement =
+        document.getElementsByName('hamburger-toggle')[0];
+    const navContainerElement =
+        document.getElementsByClassName('nav-container')[0];
+
+    if (hamburgerButtonElement.checked) {
+        LEFT_SECTION.classList.add('menu-open');
+        navContainerElement.style.opacity = 1;
+    } else {
+        LEFT_SECTION.classList.remove('menu-open');
+        navContainerElement.style.opacity = 0.9;
+    }
+}
+
+function closeHamburgerMenu() {
+    const hamburgerButtonElement = document.getElementsByName('hamburger-toggle')[0];
+    hamburgerButtonElement.checked = false;
+    LEFT_SECTION.classList.remove('menu-open');
+}
 
 async function displayContent() {
     MAIN_CONTENT_SECTION.innerHTML = '';
@@ -352,56 +371,6 @@ async function displayContent() {
     }
 }
 
-// HACK: CSS stands for Constant Source of Suffering
-async function setSkillsDecorativeTextsPosition() {
-    // layout switch causes error in calculation
-    // so we wait for the fonts to be loaded
-    await document.fonts.ready;
-
-    const reposition = () => {
-
-        const skillsTitleElement = document.getElementById('skills-title');
-        const skillsItemIndexElement = document.getElementById('skills-index')
-        const firstSkillElement = document.getElementById('skills')
-            .getElementsByClassName('ui-list')[0]
-            ?.firstElementChild;
-
-        if (isMobile()) {
-            skillsTitleElement.style = "";
-            skillsItemIndexElement.style = "";
-            return;
-        }
-
-        if (skillsTitleElement == null
-            || skillsItemIndexElement == null
-            || firstSkillElement == null
-            || SKILLS_SECTION == null) {
-            return;
-        }
-        const skillsTitleElementHeight = skillsTitleElement.clientHeight;
-
-        skillsTitleElement.style.top = `${firstSkillElement.offsetTop - skillsTitleElementHeight}px`;
-        skillsItemIndexElement.style.bottom =
-            `${(skillsItemIndexElement.getBoundingClientRect().bottom -
-                SKILLS_SECTION.getBoundingClientRect().bottom) -
-            skillsItemIndexElement.clientHeight}px`
-    }
-
-    reposition();
-
-    addEventListener('resize', reposition);
-}
-
-async function init() {
-    initKeyboardListeners();
-    initMouseListeners();
-    initTouchListeners();
-
-    await render(true, true);
-    await displayRandomBibleVerse();
-    await setSkillsDecorativeTextsPosition();
-}
-
 function clearSelectionStyling(scrollToTop) {
     if (isMobile()) {
         const selectedElement = document.getElementsByClassName('selected-item')[0];
@@ -422,7 +391,8 @@ function clearSelectionStyling(scrollToTop) {
         previousSection.items[previousPosition.sectionItemIndex];
 
     const previousSectionItemIndexElement =
-        previousSection.section.getElementsByClassName("list-index")[0]
+        previousSection.section.getElementsByClassName('list-index')[0]
+            ?.firstElementChild;
 
     const scrollableContainerElement =
         previousSection.section.getElementsByClassName('ui-list')[0];
@@ -453,6 +423,7 @@ async function render(scrollToTop = false, isInitialRender = false) {
 
     const currentSectionItemIndexElement =
         currentSection.section.getElementsByClassName("list-index")[0]
+            ?.firstElementChild
 
     const scrollableContainerElement =
         currentSection.section.getElementsByClassName('ui-list')[0];
@@ -467,16 +438,21 @@ async function render(scrollToTop = false, isInitialRender = false) {
             `${currentPosition.sectionItemIndex + 1} of ${currentSection.items.length}`;
     }
 
-    // FIXME: doesn't work anymore
+    // FIXME: not optimal, sometimes, jumps a bit too far
+    // but it doesn't impair the user experience too much
     if (scrollableContainerElement != null && currentSectionItemElement != null) {
         if (!isVisibleInScrollView(currentSectionItemElement, scrollableContainerElement)
             && previousPosition.sectionItemIndex !== currentPosition.sectionItemIndex) {
+            const gap =
+                parseInt(window.getComputedStyle(currentSectionItemElement).gap)
+
             scrollableContainerElement.scrollBy({
                 top:
                     previousPosition.sectionItemIndex <
                         currentPosition.sectionItemIndex
-                        ? currentSectionItemElement.clientHeight
-                        : -currentSectionItemElement.clientHeight
+                        ? currentSectionItemElement.clientHeight + gap
+                        : -currentSectionItemElement.clientHeight - gap,
+                behavior: 'instant'
             });
         }
     }
@@ -486,11 +462,7 @@ async function render(scrollToTop = false, isInitialRender = false) {
     }
 
     if (isMobile()) {
-        clearSelectionStyling()
-    }
-
-    if (!isInitialRender) {
-        openModal();
+        closeHamburgerMenu()
     }
 }
 
@@ -506,7 +478,6 @@ function goToSection(sectionNumber, itemNumber = 0) {
         clamp(0, sectionNumber, left_sections.length - 1);
     currentPosition.sectionItemIndex =
         clamp(0, itemNumber, left_sections[currentPosition.sectionIndex].items.length - 1);
-
 }
 
 function goToNextSection() {
@@ -549,32 +520,6 @@ function scrollMainContentUp() {
     MAIN_CONTENT_SECTION?.scrollBy({
         top: -(MAIN_CONTENT_SECTION.clientHeight / 2)
     });
-}
-
-function openModal() {
-    if (!isMobile()) {
-        return;
-    }
-
-    const modalElement = document.getElementById('right-section');
-    modalElement.classList.remove('modal-close');
-    modalElement.classList.add('modal-open');
-
-    document.body.style.position = 'fixed';
-}
-
-function closeModal() {
-    if (!isMobile()) {
-        return;
-    }
-
-    clearSelectionStyling()
-
-    const modalElement = document.getElementById('right-section');
-    modalElement.classList.remove('modal-open');
-    modalElement.classList.add('modal-close');
-
-    document.body.style.position = 'static';
 }
 
 function initKeyboardListeners() {
@@ -647,16 +592,22 @@ function initTouchListeners() {
         return;
     }
 
-    const modalCloseButtonElement = document.getElementById('modal-controls').firstElementChild;
+    const hamburgerButtonElement = document.getElementsByName('hamburger-toggle')[0];
 
-    if (modalCloseButtonElement == null) {
-        throw new Error('Modal close button not found');
-    }
-
-    modalCloseButtonElement.addEventListener('click', () => {
-        closeModal();
-    });
+    hamburgerButtonElement.addEventListener('click', () => {
+        onHamburgerMenuPress();
+    })
 }
+
+async function init() {
+    initKeyboardListeners();
+    initMouseListeners();
+    initTouchListeners();
+
+    await render(true, true);
+    await displayRandomBibleVerse();
+}
+
 
 /** HIGHLIGHTING STUFF **/
 const javascriptKeywords = [
@@ -670,8 +621,7 @@ const javascriptKeywords = [
 
 const typescriptKeywords = [
     [...javascriptKeywords[0],],
-    [...javascriptKeywords[1], 'void', 'string'
-    ],
+    [...javascriptKeywords[1], 'void', 'string'],
     [...javascriptKeywords[2], 'Promise'],
 ];
 
