@@ -308,7 +308,7 @@ pre {
     height: 1rem;
 }
 
-.ui-list div:hover:not(.selected-item):not(.selected-item div) {
+.ui-list div:hover:not(.selected-item):not(.selected-item > div) {
     background-color: #141a24;
 }
 
