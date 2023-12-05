@@ -12,8 +12,6 @@ const MAIN_CONTENT_SECTION = document.getElementById('main-content')?.getElement
 
 const COLORS = ['text-blue', 'text-orange', 'text-pink'];
 
-const cache = {}
-
 const left_sections = [
     { name: 'home', section: HOME_SECTION, items: [] },
     { name: 'experience', section: EXPERIENCE_SECTION, items: [...EXPERIENCE_SECTION.firstElementChild.children[2].children] },
@@ -201,12 +199,6 @@ async function displayContent() {
     const sectionName = left_sections[currentPosition.sectionIndex].name;
 
 
-    if (cache[sectionName + currentPosition.sectionItemIndex] != null) {
-        MAIN_CONTENT_SECTION.appendChild(cache[sectionName +
-            currentPosition.sectionItemIndex]);
-        return;
-    }
-
     const response = await fetch(`data/${sectionName}.json`)
     const { data } = await response.json();
 
@@ -335,8 +327,6 @@ async function displayContent() {
         MAIN_CONTENT_SECTION.appendChild(outerContainerElement);
 
         colorizeCode();
-
-        cache[sectionName + currentPosition.sectionItemIndex] = outerContainerElement;
     } else {
         const logoFileName = `images/logo${Math.floor(Math.random() * 4) + 1}.svg`;
         const logoContainer = document.createElement('div');
