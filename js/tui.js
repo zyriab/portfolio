@@ -192,12 +192,15 @@ function closeHamburgerMenu() {
     LEFT_SECTION.classList.remove('menu-open');
 }
 
-async function displayContent() {
+function clearMainContent() {
     MAIN_CONTENT_SECTION.innerHTML = '';
     MAIN_CONTENT_SECTION.scrollTo({ top: 0 });
+}
+
+async function displayContent() {
+    clearMainContent();
 
     const sectionName = left_sections[currentPosition.sectionIndex].name;
-
 
     const response = await fetch(`data/${sectionName}.json`)
     const { data } = await response.json();
@@ -324,6 +327,8 @@ async function displayContent() {
 
         innerContainerElement.prepend(topElement);
         outerContainerElement.appendChild(innerContainerElement);
+
+        clearMainContent()
         MAIN_CONTENT_SECTION.appendChild(outerContainerElement);
 
         colorizeCode();
@@ -339,6 +344,8 @@ async function displayContent() {
         logoElement.alt = 'Wallenart'
 
         logoContainer.appendChild(logoElement);
+
+        clearMainContent()
         MAIN_CONTENT_SECTION.appendChild(logoContainer);
 
         data.forEach((d) => {
@@ -354,6 +361,8 @@ async function displayContent() {
         })
 
         outerContainerElement.appendChild(innerContainerElement);
+
+        clearMainContent()
         MAIN_CONTENT_SECTION.appendChild(outerContainerElement);
 
         await displayRandomBibleVerse(innerContainerElement);

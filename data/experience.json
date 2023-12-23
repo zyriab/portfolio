@@ -4,7 +4,7 @@
             "name": "TypeScript Wizard",
             "company": "Shippr",
             "date": "Jan 2023 - Jan 2024",
-            "title": "Full-stack TypeScript developer (React, React Native, Node.js, PostgreSQL, GraphQL TypeORM, TailwindCSS)",
+            "title": "Full-stack TypeScript developer (React, React Native, Node.js, PostgreSQL, GraphQL, TypeORM, TailwindCSS)",
             "content": [
                 "Part of a {{fast-paced team}} as a full-stack engineer on a huge monorepo comprising of a {{React-based SPA}} serving both internal users and customers, {{React Native app}} for couriers and a layer-based monolithic {{Node.js backend}} using a {{PostgreSQL}} database.",
                 "I worked {{directly}} with the product department as well as with Shippr's operative department in order to {{solve}} both our customers' and partner-couriers' {{problems}} as well as our internal operatives teams' problems on a {{daily basis}}."
@@ -56,10 +56,7 @@
                 "- {{Prototype}} & create a {{MVP}} (Minimum Viable Product)",
                 "- Actively participate in {{UI design}}",
                 "- Actively participate in {{UX design}}",
-                "I have mainly worked on 3 projects with the game designer, one inside a bigger team. Except for the first game, I was {{fully in charge}} over the entire technical development. In the first one I was only on the client side (Game mechanics development, UI & UX design), the server side being worked on by another programmer.",
-                "{{What I have learned:}}",
-                "I have learned to {{adapt}} my thinking over new ideas coming from the game designer, {{search & learn}} new technologies on-the-fly, create a {{responsive}}, {{modular}} and {{adaptive}} design.",
-                "Video games being a really unique and malleable interactive design, I have also learned to stay in a {{\"user interaction state of mind\"}} during the entire development process."
+                "I have mainly worked on 3 projects with the game designer, one inside a bigger team. Except for the first game, I was {{fully in charge}} over the entire technical development. In the first one I was only on the client side (Game mechanics development, UI & UX design), the server side being worked on by another programmer."
             ]
         },
         {
@@ -73,9 +70,7 @@
                 "Another one was a smartphone {{VR experience}} prototype that had to include some mechanics such as a grab & drop system.",
                 "The last project I worked on was a Game Design/UX {{experiment}} where I had to {{hack}} an indoor bike to a USB controller, then I had to make a simple procedurally generated roller coaster.",
                 "The user had then to pedal to make their character move along the roller coaster.",
-                "What was expected of me here was to {{quickly}} develop {{proofs of concepts}}, work along with the artist and modify the program's design {{on-the-go}}. Only keeping the bare essential.",
-                "{{What I have learned:}}",
-                "I have learned to let go in order to prototype, fast and dirty, on the early stages and not focus too much on the design aspect when it is not {{necessary}}."
+                "What was expected of me here was to {{quickly}} develop {{proofs of concepts}}, work along with the artist and modify the program's design {{on-the-go}}. Only keeping the bare essential."
             ]
         },
         {
@@ -87,9 +82,7 @@
                 "After receiving training on the company's tools and processes I had to take customer's calls and {{solve their problems}}.",
                 "What was expected from me was to follow \"as-is\" procedures from head to tail even if I knew the solution to the customer's problem.",
                 "I wasn't following standard procedures and used my {{knowledge in computer science}} and general networking to solve the customer's problem faster.",
-                "I had the {{opportunity}} to use the company \"expert\" tools even though I wasn't trained to do so. I {{studied those aside}} of my working time, in order to be more effective in my position.",
-                "{{What I have learned:}}",
-                "I have learned to work in a big company, socialize on my workplace, collaborate with my {{colleagues}} and have dynamic working schedules. The biggest teaching, for me, on this job was to find the sweet spot between what is expected from me and what I can bring as an extra, in order to be {{efficient}} in my work as well as being {{consistent}}."
+                "I had the {{opportunity}} to use the company \"expert\" tools even though I wasn't trained to do so. I {{studied those aside}} of my working time, in order to be more effective in my position."
             ]
         },
         {
@@ -102,10 +95,7 @@
                 "Some of the projects I have contributed to :",
                 "- Egloo platform (cultural initiative from France)",
                 "- Pinguino {{prototyping}} platform",
-                "- {{Hackerspace}} Global Grid",
-                "{{What I have learned:}}",
-                "Those years were the most rich in terms of {{learning}}, this is where I began programming and computer science studies, listing all that I have learned would not be possible but I'll write about some of the principal teachings I received.",
-                "I have learned to work in teams, even {{remotely}}, practice {{pair programming}}, look for programming {{paradigms}} and {{experiment}} with them (i.e. {{Agile}}), learn new technologies {{quickly}} in order to adapt, properly {{document}}/(un)comment my code in order to work with others, keep my code {{clean}}, communicate inside an {{international}} team (also learned English), keep me updated on the development process and last news inside the team and most importantly, I have learned that the more you {{listen}} to more experienced programmers, the most you'll {{learn}} and the faster you'll get where you want to be."
+                "- {{Hackerspace}} Global Grid"
             ]
         }
     ]
