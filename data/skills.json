@@ -1,250 +1,250 @@
 {
-    "data": [
-        {
-            "name": " HTML",
-            "content": [
-                "HTML is the {{corner stone}} of the world wide web. It is used to {{organize}} and categorize the content of a {{website}}.",
-                "I have been using HTML for over {{10 years}} and I am very familiar with it. I have used it to build websites, web apps, desktop apps and even {{mobile apps}}.",
-                "I have used HTML to build {{static}} websites, {{dynamic}} websites, {{responsive}} websites, {{multi-platform}} software, {{progressive}} web apps and {{native}} mobile apps.",
-                "I have also used HTML to build {{websites}} for {{small}} businesses, {{medium}} businesses and {{large}} businesses.",
-                "If I were {{Antonio de Torres Jurado}}, HTML would be my {{trusty chisel}}."
-            ],
-            "snippet": "html"
-        },
-        {
-            "name": " CSS",
-            "content": [
-                "CSS is the {{paint}} of the world wide web. It is used to {{style}} and {{decorate}} the content of a {{website}}.",
-                "Although I have been using CSS for as long as I have been using HTML, I am not as familiar with it.",
-                "Like many programmers, I have a {{love-hate}} relationship with CSS. I love it because it allows me to {{express}} my creativity. I hate it because it is {{inconsistent}} and {{unpredictable}}.",
-                "If I were {{Bob Ross}}, CSS would be my {{happy little accidents}}."
-            ],
-            "snippet": "css"
-        },
-        {
-            "name": " JavaScript",
-            "content": [
-                "JavaScript is the {{cogs}} of the world wide web. It is used to {{power}} the content of a {{website}} and make things {{interactive}}.",
-                "I have been using JavaScript for nearly {{10 years}} and I am very familiar with it. I have used it to build all kind of solutions, from {{websites}} to {{mobile apps}}, even desktop applications like {{video games}}.",
-                "There is a joke about JavaScript that goes like this: {{JavaScript}} is so {{fast}} that it can {{render}} a {{progress bar}} in {{1 second}}.",
-                "People who tend to {{like}} JavaScript usually end up trying to write everything in JavaScript. This is called {{JavaScript fatigue}}.\nI personally prefer to use the right tool for the right job and tend to use JavaScript when {{time}} is of the essence and I want to quickly {{iterate}} over a piece of software.\nIt's excellent for {{prototyping}} and {{rapid development}}.}}",
-                "The legend says that {{Brendan Eich}} created JavaScript in {{10 days}}. That would explain why it is so {{messy}} and {{weird}}.",
-                "If I were {{Abby Peterson}}, JavaScript would be my {{chainsaw}}."
-            ],
-            "snippet": "js"
-        },
-        {
-            "name": " TypeScript",
-            "content": [
-                "TypeScript is JavaScript with {{types}}. It is used to {{prevent}} errors and make JavaScript {{predictable}}.",
-                "As you can see in the code snippet below, it is almost {{identical}} to JavaScript. The only difference is that it has {{types}} and a few other {{goodies}} sprinkled around for good measure.\nI have been using TypeScript for over {{2 years}} and I am very familiar with it.",
-                "If I have time to setup a {{build pipeline}} and I want to make sure that my code is {{robust}} and {{predictable}}, I will use TypeScript over JavaScript.",
-                "{{Types}} represent the {{intent}} of the programmer. They are a {{contract}} between the programmer and the compiler/transpiler.\nThey make working and maintaining bigger software much easier and {{safe}}.\n{{Transitioning}} from JavaScript to TypeScript was very {{easy}} since most of my past experience has been with {{strongly typed}} languages, programming without types actually feels {{weird}} to me.",
-                "If I were {{Tenzing Norgay}}, TypeScript would be my {{belay device}}."
-            ],
-            "snippet": "ts"
-        },
-        {
-            "name": "󰎙 Node.js",
-            "content": [
-                "Node.js is a {{JavaScript}} runtime. It is used to {{run}} JavaScript or TypeScript outside of the {{browser}}.\nYou can think of it as the {{engine}} that powers {{Google Chrome}} being extracted to be used on a {{server}}.",
-                "I have been using Node.js for over {{2 years}} and although there are many things left for me to {{explore}} and that I'd love to dive deeper in the {{C++ layer}} of the engine, I'm quite familiar with it.",
-                "I have used Node.js to build the backend of {{websites}}, {{web apps}}, {{SaaS}}, {{desktop apps}} and {{mobile apps}}.",
-                "If I were {{Miyamoti Musashi}}, Node.js would be my {{paddle}}."
-            ],
-            "snippet": "mjs"
-        },
-        {
-            "name": "󰡷 GraphQL",
-            "content": [
-                "GraphQL or GQL is a {{query language}} for {{APIs}}. It is used to {{fetch}} data from a {{server}}.",
-                "The {{biggest}} advantage of GraphQL is that it allows the {{client}} to {{specify}} exactly what data it needs and in what {{shape}} it wants it.\nResulting in a much leaner bandwidth load and a more fine-grained control from the client.",
-                "I have been using GraphQL for over {{2 years}} and I am very familiar with it, whether it is {{schema first}} or {{code first}}.\nA {{pattern}} I love to use with GraphQL is the definition of custom errors to have a better {{DEVX}} and {{UX}} for all the team.",
-                "GraphQL is an alternative tool to {{REST}}, which is itself a very {{good}} tool when there is not too much data to fetch, where GraphQL would be {{overkill}}.",
-                "If I were {{Joseph}}, GraphQL would be my {{coat of many colors}}."
-            ],
-            "snippet": "graphql"
-        },
-        {
-            "name": " PostgreSQL",
-            "content": [
-                "PostgreSQL or Postgres is a {{relational database}}. It is used to {{store}} and {{retrieve}} data.\n A relational database is a type of database that {{organizes}} data into tables, which are {{structured collections}} of records or {{rows}}, each containing a set of attributes or {{columns}}.",
-                "To interact with a relational database, you need to use a {{query language}} called {{SQL}}.\nSQL is a {{declarative}} language, meaning that you {{declare}} what you want to {{retrieve}} and the database {{figures out}} how to do it.",
-                "I have been using PostgreSQL for about {{1 year}} and I am still learning a lot about it. I have used it to build the backend of {{web apps}} and {{mobile apps}}.",
-                "If I were {{King George V}}, PostgreSQL would be my {{Merchant Navy}}."
-            ],
-            "snippet": "sql"
-        },
-        {
-            "name": "󰙨 Automated Testing",
-            "content": [
-                "Automated testing is the {{process}} of {{writing}} and {{running}} tests {{automatically}}.\nIt is used to {{prevent}} bugs and {{ensure}} that the software is {{working}} as {{intended}}.",
-                "There are many types of automated tests, the most common ones are {{unit tests}}, {{integration tests}} and {{end-to-end tests}}.",
-                "Unit tests are used on a {{single}} unit of code, usually a {{function}} or a {{class}}.\nIntegration tests are used to check the {{interaction}} between {{multiple}} units of code.\nEnd-to-end tests are used to poke at the {{whole}} software, from the {{user interface}} to the {{database}}.",
-                "I have been using automated testing for over {{2 years}} and I am quite familiar with it.\nThe tools I mostly use to write tests are {{Jest}} and {{Playwright}} although when available, I like to use a language's standard testing tools.",
-                "If I were {{Leonardo da Vinci}}, automated testing would be my {{sketchbook}}."
-            ],
-            "snippet": "test"
-        },
-        {
-            "name": " React (Native)",
-            "content": [
-                "React is a {{JavaScript}} framework. It is used to {{build}} user interfaces.\nIt is {{declarative}}, {{component-based}} and {{unidirectional}}.",
-                "React is {{declarative}} because you {{declare}} what you want to {{render}} and React {{figures out}} how to do it.\nReact is {{component-based}} because you {{split}} your user interface into {{small}} and {{reusable}} components.\nReact is {{unidirectional}} because data flows in a {{single}} direction, from the {{top}} to the {{bottom}}.",
-                "I have been using React for over {{2 years}} and I am quite familiar with it.\nI have used it to build the {{user interfaces}} of {{websites}}, {{web apps}} and {{mobile apps}} ({{React Native}}).",
-                "React is a very popular framework in the industry, although it is quite {{heavy}} and {{slow}} to {{render}} compared to other frameworks like {{Svelte}} or {{Vue}} or even lower-level solutions like {{HTMX}}.",
-                "If I were {{Joe Dalton}}, React would be my {{ball and chain}}."
-            ],
-            "snippet": "tsx"
-        },
-        {
-            "name": " Bash",
-            "content": [
-                "Bash is a {{shell}}. It is used to {{interact}} with the {{operating system}}.",
-                "It's useful to {{navigate}} the {{file system}}, {{install}} and {{update}} software, {{manage}} processes, {{configure}} the {{operating system}} and {{automate}} tasks.",
-                "I have been using Bash for over {{10 years}} but, when doing more than a basic task, I usually rely on {{AI assisted programming}} to work with it as it is not a tool I often use, nor is it easy to {{maintain}}.\nI have used it to {{automate}} the {{build}} and {{deployment}} of various software, as well as {{connect tools}} together like {{GitHub}} and {{Linear}}, for example.",
-                "If I were {{Cave Johnson}}, Bash would be my {{sentry turrets}}."
-            ],
-            "snippet": "sh"
-        },
-        {
-            "name": " GitHub Actions",
-            "content": [
-                "GitHub Actions is a {{CI/CD}} tool. It is used to {{automate}} the {{build}} and {{deployment}} of software.",
-                "It's useful to {{build}} and {{deploy}} software {{automatically}} when {{pushing}} to a {{branch}} or when {{creating}} a {{pull request}}.\nIt can also be used to run {{scheduled}} tasks like {{backups}} or {{maintenance}} or even custom {{Bash}} scripts.",
-                "GitHub Actions is a {{very powerful}} tool that can be used to {{automate}} almost anything.\nIt is {{free}} for {{open source}} projects and {{cheap}} for {{private}} projects.\nIt is {{easy}} to {{setup}} and {{maintain}} and it is {{very well documented}}.\nGitHub Actions are written in {{YAML}}, a popular {{markup language}}.",
-                "I have been using GitHub Actions for over {{2 years}} but I barely scratched the surface.\nI have used it to {{build}} and {{deploy}} the {{backend}} and {{frontend}} of {{web apps}}, {{SaaS}}, {{serverless micro-services}} and {{mobile apps}}.",
-                "If I were {{Batman}}, GitHub Actions would be my {{Robin}}."
-            ],
-            "snippet": "yml"
-        },
-        {
-            "name": "󰸏 AWS",
-            "content": [
-                "AWS or Amazon Web Services is a {{cloud computing}} platform. It is used to {{host}} and {{scale}} software as well as a plethora of other {{services}}.",
-                "I have been using AWS for over {{2 years}} but only used a few of the available services.\nI have used it to {{host}} the {{backend}} and {{frontend}} of {{web apps}}, {{SaaS}}, {{serverless micro-services}} and {{mobile apps}} as well as {{store files}} and generate {{TLS certificates}} to get that sweet {{https}}.",
-                "AWS is a {{very powerful}} tool that can be used to {{host}} and {{scale}} almost anything.",
-                "If I were {{R2D2}}, AWS would be my {{tool kit}}."
-            ],
-            "snippet": null
-        },
-        {
-            "name": " Git",
-            "content": [
-                "Git is a {{version control system}}. It is used to {{track}} and {{manage}} changes to {{files}}.\nIt's useful to {{collaborate}} on {{projects}} and {{keep track}} of {{changes}}.",
-                "I have been using Git for over {{10 years}} and I am very familiar with it.\nI have used it to {{collaborate}} on {{projects}} with {{teams}} of {{various sizes}} as well as {{manage}} my own personal projects.",
-                "Git is a {{very powerful}} tool that can be used to {{track}} and {{manage}} almost anything, not just code!",
-                "If I were {{Hermes}}, Git would be my {{winged sandals}}."
-            ],
-            "snippet": null
-        },
-        {
-            "name": " Go",
-            "content": [
-                "Go is a {{programming language}} mainly used for {{backend}} development.\nIt is {{fast}}, {{simple}}, {{powerful}} and {{fun}}.",
-                "For some programmers, its {{simplicity}} can also be its {{downfall}} as it does not have all the bell and whistles as some languages, such as JavaScript.\nOn the other hand, it is much {{less bloated}} and gives a lot of {{freedom}} to the programmer, very much like its big brother {{C}}.",
-                "It is {{fast}} because it is {{compiled}} to {{machine code}}.\nIt is {{powerful}} because it is {{statically typed}} and {{concurrent}}.\nIt is {{simple}} because it is {{opinionated}}, has a very {{complete}} standard library and only contains {{25 keywords}}.",
-                "I have been using Go for less than {{1 year}} and I am getting the hang of it.\nI have used it to {{fast-prototype}} a {{web crawler}} and I am currently working on a {{video game}} with it.",
-                "If I were {{Maïté}}, Go would be my {{Ortolan}}."
-            ],
-            "snippet": "go"
-        },
-        {
-            "name": " C",
-            "content": [
-                "C is a {{programming language}} mainly used for {{low-level}} development.\nIt is {{fast}}, {{simple}}, and extremely {{powerful}}.",
-                "It has been around since the {{70s}} and is still used today in {{operating systems}}, {{embedded systems}}, {{video games}}, {{time-sensitive}} algorithms and much more.\nThe device that you are currently using has its very {{core}} written in C, all kind of devices like {{your monitor}}, {{car}}, and {{spaceships}} (hi Elon) do {{extensive}} use of C.",
-                "It is {{fast}} because it is {{compiled}} to {{machine code}}.\nIt is {{powerful}} because it is {{statically typed}} and {{low-level}}.\nIt is {{simple}} because it comes with almost {{no bloat}}.",
-                "C can be {{difficult}} to {{learn}} and {{maintain}} but it is a {{very powerful}} tool that can be used to {{build}} almost anything.\nOne of its {{strength}} (but also pitfall) is the fact that the programmer has to {{manually}} allocate and free {{memory}}, opening the possibility for {{extremely efficient}} software but also for dreaded {{memory leaks}}.",
-                "C is {{my very first}} programming language, I've been dabbling with it since {{2010}} and I am still learning a lot about it.\nI mainly use it to work on {{embedded systems}}, as I enjoy {{bare-metal}} programming.\nIt is also an invaluable {{learning tool}}, especially when coupled with very low-level projects and {{algorithms}} development.",
-                "If I were {{King Arthur}}, C would be my {{Excalibur}}."
-            ],
-            "snippet": "c"
-        },
-        {
-            "name": " Arduino",
-            "content": [
-                "Arduino is an {{open-source}} electronics platform. It is used to {{build}} and {{program}} {{micro-controllers}} using the {{Arduino language}}, an abstraction above {{AVR C}}, a special {{variation}} of C, especially made to program {{AVR micro-controllers}}.\nIt is way {{simpler}} than {{AVR C}} and a great tool for {{prototyping}} and {{learning}} about {{electronics}} or even to build {{non-critical}} projects.",
-                "I usually program in {{AVR C}} as I find it much more fun and {{interesting}} but I also use Arduino when I want to {{quickly}} prototype something or when I want to teach someone about {{embedded programming}}.",
-                "If I were {{Velma}}, Arduino would be my {{glasses}}."
-            ],
-            "snippet": "ino"
-        },
-        {
-            "name": " Linux",
-            "content": [
-                "Linux is an {{operating system}} based on {{Unix}}.\nIt dominates the {{server}} space but is also the basis for the {{Android}} phone operating system.",
-                "I have been using Linux for over {{10 years}} and I am quite familiar with it.\nAlthough I've tried various flavors ({{distributions}}), I usually go back to {{Debian based}} distributions like {{Ubuntu}}, for example.",
-                "Linux is a {{go-to}} tool for me and, by far, the best development environment I've used.\nIt is {{free}}, {{open-source}}, {{fast}}, {{stable}}, {{secure}}, {{customizable}} and {{extremely powerful}}.",
-                "If I were {{Buzz Aldrin}}, Linux would be my {{Apollo 11}}."
-            ],
-            "snippet": null
-        },
-        {
-            "name": " Shopify Apps",
-            "content": [
-                "Shopify is an {{e-commerce}} platform. It is used to {{build}} and {{manage}} online {{stores}}.",
-                "Shopify allows you to {{extend}} its {{functionality}} by building {{apps}} for it, like a plugin.\nI have worked on {{Shopify apps}} and find the {{Shopify app store}} to be a great candidate for reliable income, although the competition can be quite fierce.\nThe biggest {{difficulty}} with Shopify apps, is the {{poor documentation}} and the {{commercial aspect}} of the endeavor of building and selling apps.",
-                "I do have a great {{interest}} in {{e-commerce}} and {{Shopify}} is a great tool to {{learn}} about it.",
-                "If I were {{Natori Masatake}}, Shopify apps would be my {{ropes and ladders}}."
-            ],
-            "snippet": null
-        },
-        {
-            "name": "󰍘 Software Architecture",
-            "content": [
-                "Software architecture is the {{process}} of {{designing}} and {{planning}} a {{solution}} to a {{problem}}.\nIt is used to {{ensure}} that the solution is {{robust}}, {{scalable}} and {{maintainable}}.",
-                "There are many {{patterns}} and {{principles}} that can be used to {{design}} a solution.\nSome of the popular ones are {{MVC}}, {{MVP}} and {{MVVM}} and then many patterns like the {{Observer}}, {{Factory}} or {{Singleton}} patterns, to new a few.",
-                "Software architecture is {{crucial}} in delivering {{quality software}} that is {{scalable}} and {{maintainable}}. It also helps with {{time estimation}} and {{retrospective}} on the work that was done.",
-                "If I were {{George S. Patton}}, software architecture would be my {{M4 Sherman}}."
-            ],
-            "snippet": null
-        },
-        {
-            "name": " UX Design",
-            "content": [
-                "UX, short for {{user experience}}, refers to the {{overall experience}} of using a given product, tool, object, or pretty much {{anything}}.\nAlthough it can be conveyed through user interfaces, it's {{much more}} than that.",
-                "I have a {{great interest}} in UX design (as this website implies) and have been heavily {{UX-oriented}} since I worked on my first video game. Even when working on the backend.\nI think that good UX is {{paramount}} in achieving {{great software}} or even great {{anything}}.",
-                "A good example of a {{UX-concious}} design I've done in the past is my {{custom error reporting}} system in GraphQL or the general {{attention to details}} I put in what I do, at I think that the most {{minute detail}}, even if not conciously noticed, can have a {{dramatic impact}} on a user's {{behavior}} and opinion of an organization or person.",
-                "If I were {{Nikola Tesla}}, UX design would be my {{poetry}}."
-            ],
-            "snippet": null
-        },
-        {
-            "name": "󰓌 StackOverflow",
-            "content": [
-                "StackOverflow is a famous {{website}} where you can find any {{answer}} to any technical question, as long as you are ready to swim across an {{ocean}} of smugness and judgement.\nIt also has a lot of variations, geared toward {{specific industries}} and niches, even ones that are not technical at all.",
-                "It is like a {{lighthouse}} in the darkest of nights and, as long as you understand what you find, an {{amazing tool}} for any programmer.",
-                "If I were {{Ash Ketchum}}, StackOverflow would be my {{Pokédex}}."
-            ],
-            "snippet": null
-        },
-        {
-            "name": "󱚦 AI Assisted Programming",
-            "content": [
-                "AI assisted programming is the new {{cool}} kid that just arrived.\nWe could say it's a mix of {{Googling}} and {{hazardous pair programming}} on steroids.",
-                "The main tools I use are {{GitHub Copilot}}, {{ChatGPT}} and {{Phind}} and although I still have to study the practice much more to be really {{efficient}}, they give me a nice {{boost}} in {{productivity}}.\nWhen coupled with certain languages like {{Go}}, it sometime feels like I am the copilot!",
-                "If I were {{Masterchief}}, AI assisted programming would be my {{Cortana}}."
-            ],
-            "snippet": null
-        },
-        {
-            "name": "󰢚 Human Languages",
-            "content": [
-                "I am at least as {{Human}} as Mark Zuckerberg, therefore, I speak {{Human languages}}.\nI am {{fluent}} in {{French}} and {{English}} and I have a conversational level in {{Spanish}}.\nJ'ai aussi étudié le {{Japonais}} mais le manque de pratique m'a fait perdre la plupart de mes connaissances.\nJ'ai aussi un intérêt pour des langues plus insolites, comme le {{Swahili}} ou le {{Wallon}}.",
-                "01001001 01100110 00100000 01001001 00100000 01110111 01101000 01100101 01110010 01100101 00100000 01100001 00100000 {{01100011 01101111 01101101 01110000 01110101 01110100 01100101 01110010}} 00101100 00100000 01001000 01110101 01101101 01100001 01101110 00100000 01101100 01100001 01101110 01100111 01110101 01100001 01100111 01100101 01110011 00100000 01110111 01101111 01110101 01101100 01100100 00100000 01100010 01100101 00100000 01101101 01111001 00100000 {{01100011 01101111 01101101 01101101 01110101 01101110 01101001 01100011 01100001 01110100 01101001 01101111 01101110 00100000 01110000 01110010 01101111 01110100 01101111 01100011 01101111 01101100}} 00101110"
-            ],
-            "snippet": null
-        },
-        {
-            "name": " Neovim",
-            "content": [
-                "Neovim is a {{text editor}} based on Vim, it is {{keyboard-centric}}, meaning that it was designed around keyboard navigation and supports multiple modes, making it possible to move around the text with the {{keyboard keys}} ({{Normal}} mode) before selecting ({{Visual}} mode) or writing ({{Insert}} mode).\nNeovim brings a whole deal of {{customizability}} through {{Lua}} scripting as well as a lot of community-made extensions.",
-                "I have started using it in the middle of {{2023}} and have still a lot to {{learn}} about it, like {{buffers}} and power-user {{navigation}} but I use it for {{everything}} and feel at home when using it.\nI even wrote an extension to allow better use of the debugger with {{npm}}.",
-                "(It's also a {{flex}} on other programmers).",
-                "If I were {{you}}, Neovim would be my {{next editor}} ;)"
-            ],
-            "snippet": null
-        }
-    ]
+  "data": [
+    {
+      "name": " HTML",
+      "content": [
+        "HTML is the {{corner stone}} of the world wide web. It is used to {{organize}} and categorize the content of a {{website}}.",
+        "I have been using HTML for over {{10 years}} and I am very familiar with it. I have used it to build websites, web apps, desktop apps and even {{mobile apps}}.",
+        "I have used HTML to build {{static}} websites, {{dynamic}} websites, {{responsive}} websites, {{multi-platform}} software, {{progressive}} web apps and {{native}} mobile apps.",
+        "I have also used HTML to build {{websites}} for {{small}} businesses, {{medium}} businesses and {{large}} businesses.",
+        "If I were {{Antonio de Torres Jurado}}, HTML would be my {{trusty chisel}}."
+      ],
+      "snippet": "html"
+    },
+    {
+      "name": " CSS",
+      "content": [
+        "CSS is the {{paint}} of the world wide web. It is used to {{style}} and {{decorate}} the content of a {{website}}.",
+        "Although I have been using CSS for as long as I have been using HTML, I am not as familiar with it.",
+        "Like many programmers, I have a {{love-hate}} relationship with CSS. I love it because it allows me to {{express}} my creativity. I hate it because it is {{inconsistent}} and {{unpredictable}}.",
+        "If I were {{Bob Ross}}, CSS would be my {{happy little accidents}}."
+      ],
+      "snippet": "css"
+    },
+    {
+      "name": " JavaScript",
+      "content": [
+        "JavaScript is the {{cogs}} of the world wide web. It is used to {{power}} the content of a {{website}} and make things {{interactive}}.",
+        "I have been using JavaScript for nearly {{10 years}} and I am very familiar with it. I have used it to build all kind of solutions, from {{websites}} to {{mobile apps}}, even desktop applications like {{video games}}.",
+        "There is a joke about JavaScript that goes like this: {{JavaScript}} is so {{fast}} that it can {{render}} a {{progress bar}} in {{1 second}}.",
+        "People who tend to {{like}} JavaScript usually end up trying to write everything in JavaScript. This is called {{JavaScript fatigue}}.\nI personally prefer to use the right tool for the right job and tend to use JavaScript when {{time}} is of the essence and I want to quickly {{iterate}} over a piece of software.\nIt's excellent for {{prototyping}} and {{rapid development}}.}}",
+        "The legend says that {{Brendan Eich}} created JavaScript in {{10 days}}. That would explain why it is so {{messy}} and {{weird}}.",
+        "If I were {{Abby Peterson}}, JavaScript would be my {{chainsaw}}."
+      ],
+      "snippet": "js"
+    },
+    {
+      "name": " TypeScript",
+      "content": [
+        "TypeScript is JavaScript with {{types}}. It is used to {{prevent}} errors and make JavaScript {{predictable}}.",
+        "As you can see in the code snippet below, it is almost {{identical}} to JavaScript. The only difference is that it has {{types}} and a few other {{goodies}} sprinkled around for good measure.\nI have been using TypeScript for over {{2 years}} and I am very familiar with it.",
+        "If I have time to setup a {{build pipeline}} and I want to make sure that my code is {{robust}} and {{predictable}}, I will use TypeScript over JavaScript.",
+        "{{Types}} represent the {{intent}} of the programmer. They are a {{contract}} between the programmer and the compiler/transpiler.\nThey make working and maintaining bigger software much easier and {{safe}}.\n{{Transitioning}} from JavaScript to TypeScript was very {{easy}} since most of my past experience has been with {{strongly typed}} languages, programming without types actually feels {{weird}} to me.",
+        "If I were {{Tenzing Norgay}}, TypeScript would be my {{belay device}}."
+      ],
+      "snippet": "ts"
+    },
+    {
+      "name": "󰎙 Node.js",
+      "content": [
+        "Node.js is a {{JavaScript}} runtime. It is used to {{run}} JavaScript or TypeScript outside of the {{browser}}.\nYou can think of it as the {{engine}} that powers {{Google Chrome}} being extracted to be used on a {{server}}.",
+        "I have been using Node.js for over {{2 years}} and although there are many things left for me to {{explore}} and that I'd love to dive deeper in the {{C++ layer}} of the engine, I'm quite familiar with it.",
+        "I have used Node.js to build the backend of {{websites}}, {{web apps}}, {{SaaS}}, {{desktop apps}} and {{mobile apps}}.",
+        "If I were {{Miyamoti Musashi}}, Node.js would be my {{paddle}}."
+      ],
+      "snippet": "mjs"
+    },
+    {
+      "name": "󰡷 GraphQL",
+      "content": [
+        "GraphQL or GQL is a {{query language}} for {{APIs}}. It is used to {{fetch}} data from a {{server}}.",
+        "The {{biggest}} advantage of GraphQL is that it allows the {{client}} to {{specify}} exactly what data it needs and in what {{shape}} it wants it.\nResulting in a much leaner bandwidth load and a more fine-grained control from the client.",
+        "I have been using GraphQL for over {{2 years}} and I am very familiar with it, whether it is {{schema first}} or {{code first}}.\nA {{pattern}} I love to use with GraphQL is the definition of custom errors to have a better {{DEVX}} and {{UX}} for all the team.",
+        "GraphQL is an alternative tool to {{REST}}, which is itself a very {{good}} tool when there is not too much data to fetch, where GraphQL would be {{overkill}}.",
+        "If I were {{Joseph}}, GraphQL would be my {{coat of many colors}}."
+      ],
+      "snippet": "graphql"
+    },
+    {
+      "name": " PostgreSQL",
+      "content": [
+        "PostgreSQL or Postgres is a {{relational database}}. It is used to {{store}} and {{retrieve}} data.\n A relational database is a type of database that {{organizes}} data into tables, which are {{structured collections}} of records or {{rows}}, each containing a set of attributes or {{columns}}.",
+        "To interact with a relational database, you need to use a {{query language}} called {{SQL}}.\nSQL is a {{declarative}} language, meaning that you {{declare}} what you want to {{retrieve}} and the database {{figures out}} how to do it.",
+        "I have been using PostgreSQL for about {{1 year}} and I am still learning a lot about it. I have used it to build the backend of {{web apps}} and {{mobile apps}}.",
+        "If I were {{King George V}}, PostgreSQL would be my {{Merchant Navy}}."
+      ],
+      "snippet": "sql"
+    },
+    {
+      "name": "󰙨 Automated Testing",
+      "content": [
+        "Automated testing is the {{process}} of {{writing}} and {{running}} tests {{automatically}}.\nIt is used to {{prevent}} bugs and {{ensure}} that the software is {{working}} as {{intended}}.",
+        "There are many types of automated tests, the most common ones are {{unit tests}}, {{integration tests}} and {{end-to-end tests}}.",
+        "Unit tests are used on a {{single}} unit of code, usually a {{function}} or a {{class}}.\nIntegration tests are used to check the {{interaction}} between {{multiple}} units of code.\nEnd-to-end tests are used to poke at the {{whole}} software, from the {{user interface}} to the {{database}}.",
+        "I have been using automated testing for over {{2 years}} and I am quite familiar with it.\nThe tools I mostly use to write tests are {{Jest}} and {{Playwright}} although when available, I like to use a language's standard testing tools.",
+        "If I were {{Leonardo da Vinci}}, automated testing would be my {{sketchbook}}."
+      ],
+      "snippet": "test"
+    },
+    {
+      "name": " React (Native)",
+      "content": [
+        "React is a {{JavaScript}} framework. It is used to {{build}} user interfaces.\nIt is {{declarative}}, {{component-based}} and {{unidirectional}}.",
+        "React is {{declarative}} because you {{declare}} what you want to {{render}} and React {{figures out}} how to do it.\nReact is {{component-based}} because you {{split}} your user interface into {{small}} and {{reusable}} components.\nReact is {{unidirectional}} because data flows in a {{single}} direction, from the {{top}} to the {{bottom}}.",
+        "I have been using React for over {{2 years}} and I am quite familiar with it.\nI have used it to build the {{user interfaces}} of {{websites}}, {{web apps}} and {{mobile apps}} ({{React Native}}).",
+        "React is a very popular framework in the industry, although it is quite {{heavy}} and {{slow}} to {{render}} compared to other frameworks like {{Svelte}} or {{Vue}} or even lower-level solutions like {{HTMX}}.",
+        "If I were {{Joe Dalton}}, React would be my {{ball and chain}}."
+      ],
+      "snippet": "tsx"
+    },
+    {
+      "name": " Bash",
+      "content": [
+        "Bash is a {{shell}}. It is used to {{interact}} with the {{operating system}}.",
+        "It's useful to {{navigate}} the {{file system}}, {{install}} and {{update}} software, {{manage}} processes, {{configure}} the {{operating system}} and {{automate}} tasks.",
+        "I have been using Bash for over {{10 years}} but, when doing more than a basic task, I usually rely on {{AI assisted programming}} to work with it as it is not a tool I often use, nor is it easy to {{maintain}}.\nI have used it to {{automate}} the {{build}} and {{deployment}} of various software, as well as {{connect tools}} together like {{GitHub}} and {{Linear}}, for example.",
+        "If I were {{Cave Johnson}}, Bash would be my {{sentry turrets}}."
+      ],
+      "snippet": "sh"
+    },
+    {
+      "name": " GitHub Actions",
+      "content": [
+        "GitHub Actions is a {{CI/CD}} tool. It is used to {{automate}} the {{build}} and {{deployment}} of software.",
+        "It's useful to {{build}} and {{deploy}} software {{automatically}} when {{pushing}} to a {{branch}} or when {{creating}} a {{pull request}}.\nIt can also be used to run {{scheduled}} tasks like {{backups}} or {{maintenance}} or even custom {{Bash}} scripts.",
+        "GitHub Actions is a {{very powerful}} tool that can be used to {{automate}} almost anything.\nIt is {{free}} for {{open source}} projects and {{cheap}} for {{private}} projects.\nIt is {{easy}} to {{setup}} and {{maintain}} and it is {{very well documented}}.\nGitHub Actions are written in {{YAML}}, a popular {{markup language}}.",
+        "I have been using GitHub Actions for over {{2 years}} but I barely scratched the surface.\nI have used it to {{build}} and {{deploy}} the {{backend}} and {{frontend}} of {{web apps}}, {{SaaS}}, {{serverless micro-services}} and {{mobile apps}}.",
+        "If I were {{Batman}}, GitHub Actions would be my {{Robin}}."
+      ],
+      "snippet": "yml"
+    },
+    {
+      "name": "󰸏 AWS",
+      "content": [
+        "AWS or Amazon Web Services is a {{cloud computing}} platform. It is used to {{host}} and {{scale}} software as well as a plethora of other {{services}}.",
+        "I have been using AWS for over {{2 years}} but only used a few of the available services.\nI have used it to {{host}} the {{backend}} and {{frontend}} of {{web apps}}, {{SaaS}}, {{serverless micro-services}} and {{mobile apps}} as well as {{store files}} and generate {{TLS certificates}} to get that sweet {{https}}.",
+        "AWS is a {{very powerful}} tool that can be used to {{host}} and {{scale}} almost anything.",
+        "If I were {{R2D2}}, AWS would be my {{tool kit}}."
+      ],
+      "snippet": null
+    },
+    {
+      "name": " Git",
+      "content": [
+        "Git is a {{version control system}}. It is used to {{track}} and {{manage}} changes to {{files}}.\nIt's useful to {{collaborate}} on {{projects}} and {{keep track}} of {{changes}}.",
+        "I have been using Git for over {{10 years}} and I am very familiar with it.\nI have used it to {{collaborate}} on {{projects}} with {{teams}} of {{various sizes}} as well as {{manage}} my own personal projects.",
+        "Git is a {{very powerful}} tool that can be used to {{track}} and {{manage}} almost anything, not just code!",
+        "If I were {{Hermes}}, Git would be my {{winged sandals}}."
+      ],
+      "snippet": null
+    },
+    {
+      "name": " Go",
+      "content": [
+        "Go is a {{programming language}} mainly used for {{backend}} development.\nIt is {{fast}}, {{simple}}, {{powerful}} and {{fun}}.",
+        "For some programmers, its {{simplicity}} can also be its {{downfall}} as it does not have all the bell and whistles as some languages, such as JavaScript.\nOn the other hand, it is much {{less bloated}} and gives a lot of {{freedom}} to the programmer, very much like its big brother {{C}}.",
+        "It is {{fast}} because it is {{compiled}} to {{machine code}}.\nIt is {{powerful}} because it is {{statically typed}} and {{concurrent}}.\nIt is {{simple}} because it is {{opinionated}}, has a very {{complete}} standard library and only contains {{25 keywords}}.",
+        "I have been using Go for less than {{1 year}} and I am getting the hang of it.\nI have used it to {{fast-prototype}} a {{web crawler}} and I am currently working on a {{video game}} with it.",
+        "If I were {{Maïté}}, Go would be my {{Ortolan}}."
+      ],
+      "snippet": "go"
+    },
+    {
+      "name": " C",
+      "content": [
+        "C is a {{programming language}} mainly used for {{low-level}} development.\nIt is {{fast}}, {{simple}}, and extremely {{powerful}}.",
+        "It has been around since the {{70s}} and is still used today in {{operating systems}}, {{embedded systems}}, {{video games}}, {{time-sensitive}} algorithms and much more.\nThe device that you are currently using has its very {{core}} written in C, all kind of devices like {{your monitor}}, {{car}}, and {{spaceships}} (hi Elon) do {{extensive}} use of C.",
+        "It is {{fast}} because it is {{compiled}} to {{machine code}}.\nIt is {{powerful}} because it is {{statically typed}} and {{low-level}}.\nIt is {{simple}} because it comes with almost {{no bloat}}.",
+        "C can be {{difficult}} to {{learn}} and {{maintain}} but it is a {{very powerful}} tool that can be used to {{build}} almost anything.\nOne of its {{strength}} (but also pitfall) is the fact that the programmer has to {{manually}} allocate and free {{memory}}, opening the possibility for {{extremely efficient}} software but also for dreaded {{memory leaks}}.",
+        "C is {{my very first}} programming language, I've been dabbling with it since {{2010}} and I am still learning a lot about it.\nI mainly use it to work on {{embedded systems}}, as I enjoy {{bare-metal}} programming.\nIt is also an invaluable {{learning tool}}, especially when coupled with very low-level projects and {{algorithms}} development.",
+        "If I were {{King Arthur}}, C would be my {{Excalibur}}."
+      ],
+      "snippet": "c"
+    },
+    {
+      "name": " Arduino",
+      "content": [
+        "Arduino is an {{open-source}} electronics platform. It is used to {{build}} and {{program}} {{micro-controllers}} using the {{Arduino language}}, an abstraction above {{AVR C}}, a special {{variation}} of C, especially made to program {{AVR micro-controllers}}.\nIt is way {{simpler}} than {{AVR C}} and a great tool for {{prototyping}} and {{learning}} about {{electronics}} or even to build {{non-critical}} projects.",
+        "I usually program in {{AVR C}} as I find it much more fun and {{interesting}} but I also use Arduino when I want to {{quickly}} prototype something or when I want to teach someone about {{embedded programming}}.",
+        "If I were {{Velma}}, Arduino would be my {{glasses}}."
+      ],
+      "snippet": "ino"
+    },
+    {
+      "name": " Linux",
+      "content": [
+        "Linux is an {{operating system}} based on {{Unix}}.\nIt dominates the {{server}} space but is also the basis for the {{Android}} phone operating system.",
+        "I have been using Linux for over {{10 years}} and I am quite familiar with it.\nAlthough I've tried various flavors ({{distributions}}), I usually go back to {{Debian based}} distributions like {{Ubuntu}}, for example.",
+        "Linux is a {{go-to}} tool for me and, by far, the best development environment I've used.\nIt is {{free}}, {{open-source}}, {{fast}}, {{stable}}, {{secure}}, {{customizable}} and {{extremely powerful}}.",
+        "If I were {{Buzz Aldrin}}, Linux would be my {{Apollo 11}}."
+      ],
+      "snippet": null
+    },
+    {
+      "name": " Shopify Apps",
+      "content": [
+        "Shopify is an {{e-commerce}} platform. It is used to {{build}} and {{manage}} online {{stores}}.",
+        "Shopify allows you to {{extend}} its {{functionality}} by building {{apps}} for it, like a plugin.\nI have worked on {{Shopify apps}} and find the {{Shopify app store}} to be a great candidate for reliable income, although the competition can be quite fierce.\nThe biggest {{difficulty}} with Shopify apps, is the {{poor documentation}} and the {{commercial aspect}} of the endeavor of building and selling apps.",
+        "I do have a great {{interest}} in {{e-commerce}} and {{Shopify}} is a great tool to {{learn}} about it.",
+        "If I were {{Natori Masatake}}, Shopify apps would be my {{ropes and ladders}}."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "󰍘 Software Architecture",
+      "content": [
+        "Software architecture is the {{process}} of {{designing}} and {{planning}} a {{solution}} to a {{problem}}.\nIt is used to {{ensure}} that the solution is {{robust}}, {{scalable}} and {{maintainable}}.",
+        "There are many {{patterns}} and {{principles}} that can be used to {{design}} a solution.\nSome of the popular ones are {{MVC}}, {{MVP}} and {{MVVM}} and then many patterns like the {{Observer}}, {{Factory}} or {{Singleton}} patterns, to new a few.",
+        "Software architecture is {{crucial}} in delivering {{quality software}} that is {{scalable}} and {{maintainable}}. It also helps with {{time estimation}} and {{retrospective}} on the work that was done.",
+        "If I were {{George S. Patton}}, software architecture would be my {{M4 Sherman}}."
+      ],
+      "snippet": null
+    },
+    {
+      "name": " UX Design",
+      "content": [
+        "UX, short for {{user experience}}, refers to the {{overall experience}} of using a given product, tool, object, or pretty much {{anything}}.\nAlthough it can be conveyed through user interfaces, it's {{much more}} than that.",
+        "I have a {{great interest}} in UX design (as this website implies) and have been heavily {{UX-oriented}} since I worked on my first video game. Even when working on the backend.\nI think that good UX is {{paramount}} in achieving {{great software}} or even great {{anything}}.",
+        "A good example of a {{UX-concious}} design I've done in the past is my {{custom error reporting}} system in GraphQL or the general {{attention to details}} I put in what I do, at I think that the most {{minute detail}}, even if not conciously noticed, can have a {{dramatic impact}} on a user's {{behavior}} and opinion of an organization or person.",
+        "If I were {{Nikola Tesla}}, UX design would be my {{poetry}}."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "󰓌 StackOverflow",
+      "content": [
+        "StackOverflow is a famous {{website}} where you can find any {{answer}} to any technical question, as long as you are ready to swim across an {{ocean}} of smugness and judgement.\nIt also has a lot of variations, geared toward {{specific industries}} and niches, even ones that are not technical at all.",
+        "It is like a {{lighthouse}} in the darkest of nights and, as long as you understand what you find, an {{amazing tool}} for any programmer.",
+        "If I were {{Ash Ketchum}}, StackOverflow would be my {{Pokédex}}."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "󱚦 AI Assisted Programming",
+      "content": [
+        "AI assisted programming is the new {{cool}} kid that just arrived.\nWe could say it's a mix of {{Googling}} and {{hazardous pair programming}} on steroids.",
+        "The main tools I use are {{GitHub Copilot}}, {{ChatGPT}} and {{Phind}} and although I still have to study the practice much more to be really {{efficient}}, they give me a nice {{boost}} in {{productivity}}.\nWhen coupled with certain languages like {{Go}}, it sometime feels like I am the copilot!",
+        "If I were {{Masterchief}}, AI assisted programming would be my {{drunk Cortana}}."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "󰢚 Human Languages",
+      "content": [
+        "I am at least as {{Human}} as Mark Zuckerberg, therefore, I speak {{Human languages}}.\nI am {{fluent}} in {{French}} and {{English}} and I have a conversational level in {{Spanish}}.\nJ'ai aussi étudié le {{Japonais}} mais le manque de pratique m'a fait perdre la plupart de mes connaissances.\nJ'ai aussi un intérêt pour des langues plus insolites, comme le {{Swahili}} ou le {{Wallon}}.",
+        "01001001 01100110 00100000 01001001 00100000 01110111 01101000 01100101 01110010 01100101 00100000 01100001 00100000 {{01100011 01101111 01101101 01110000 01110101 01110100 01100101 01110010}} 00101100 00100000 01001000 01110101 01101101 01100001 01101110 00100000 01101100 01100001 01101110 01100111 01110101 01100001 01100111 01100101 01110011 00100000 01110111 01101111 01110101 01101100 01100100 00100000 01100010 01100101 00100000 01101101 01111001 00100000 {{01100011 01101111 01101101 01101101 01110101 01101110 01101001 01100011 01100001 01110100 01101001 01101111 01101110 00100000 01110000 01110010 01101111 01110100 01101111 01100011 01101111 01101100}} 00101110"
+      ],
+      "snippet": null
+    },
+    {
+      "name": " Neovim",
+      "content": [
+        "Neovim is a {{text editor}} based on Vim, it is {{keyboard-centric}}, meaning that it was designed around keyboard navigation and supports multiple modes, making it possible to move around the text with the {{keyboard keys}} ({{Normal}} mode) before selecting ({{Visual}} mode) or writing ({{Insert}} mode).\nNeovim brings a whole deal of {{customizability}} through {{Lua}} scripting as well as a lot of community-made extensions.",
+        "I have started using it in the middle of {{2023}} and have still a lot to {{learn}} about it, like {{buffers}} and power-user {{navigation}} but I use it for {{everything}} and feel at home when using it.\nI even wrote an extension to allow better use of the debugger with {{npm}}.",
+        "(It's also a {{flex}} on other programmers).",
+        "If I were {{you}}, Neovim would be my {{next editor}} ;)"
+      ],
+      "snippet": null
+    }
+  ]
 }
