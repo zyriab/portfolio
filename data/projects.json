@@ -5,9 +5,9 @@
       "year": 2024,
       "demoUrl": "https://artisanweb.be",
       "content": [
-        "Artisan Web is a B2B web agency that I founded in order to provide {{high-quality}} and {{custom}} websites to small and medium-sized businesses in Belgium.",
+        "Artisan Web is a {{B2B web agency}} that I founded in order to provide {{high-quality}} and {{custom}} websites to small and medium-sized businesses in Belgium.",
         "We offer subscription-based {{web development}} and {{design}} services, as well as {{custom work}}.",
-        "Our guarantee is that we will always provide a {{unique}} and {{fast}} website, {{100% handmade}}, that is {{responsive}} and {{SEO-optimized}} while offering an above-average {{customer service}}."
+        "Our guarantee is that we will always provide a {{unique}} and {{fast}} website, {{100% handmade}}, that is {{responsive}} and {{SEO-optimized}} while offering excellent and personalized {{customer service}}."
       ],
       "technologies": [
         "{{WebC}} (HTML superset)",
