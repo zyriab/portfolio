@@ -1,10 +1,10 @@
-typedef struct dequeNode {
+typedef struct deque_node {
   void *data;
-  struct dequeNode *next;
-  struct dequeNode *prev;
+  struct deque_node *next;
+  struct deque_node *prev;
 } Node;
 
-struct dequeType {
+struct deque_type {
   Node *front;
   Node *back;
 };
@@ -15,7 +15,7 @@ static void terminate(const char *message) {
 }
 
 Deque create_deque(void) {
-  Deque deque = (Deque)malloc(sizeof(struct dequeType));
+  Deque deque = (Deque)malloc(sizeof(struct deque_type));
 
   if (deque == NULL) {
     terminate("Error in create_deque(): failed to allocate deque.\n");
