@@ -1,140 +1,134 @@
 {
-    "data": [
-        {
-            "name": "wallenart.dev",
-            "year": 2023,
-            "githubUrl": "https://github.com/zyriab/portfolio",
-            "content": [
-                "This website was built in {{3 days}} using only HTML, CSS and JavaScript with {{no other dependencies}} or tooling than an external API to fetch {{Bible}} verses.\nIt is a {{100% original UX & UI}} that I built and designed, based on {{terminal user interfaces}} (aka {{TUI}}).",
-                "It is also a {{static website}} that is {{completely responsive}}, with a quite distinct {{mobile}} and {{desktop}} UX.\nI've always {{loved}} TUI and wanted to give this experience to {{you}}, dear visitor.",
-                "I also wanted to {{showcase}} my {{skills}} as a {{full-stack}} developer and {{designer}} by building a {{fast}} and {{responsive}} website that is {{unique}} and {{interesting}} in itself.",
-                "I hope you {{enjoy}} your stay and {{come back}} soon! ;)"
-            ],
-            "technologies": [
-                "{{HTML}}",
-                "CSS",
-                "{{JavaScript}}"
-            ]
-        },
-        {
-            "name": "npm-dap.nvim",
-            "year": 2023,
-            "githubUrl": "https://github.com/zyriab/npm-dap.nvim",
-            "images": [
-                "../images/npm-dap.webp"
-            ],
-            "content": [
-                "npm-dap.nvim is a {{Neovim}} plugin that I built in order to {{debug}} {{Node.js}} applications using the {{DAP}} protocol through a {{user-friendly}} UI inspired by {{VSCode}}.\nIt is my first Neovim {{plugin}} already proved quite useful when working with {{Node.js}} in professinal settings."
-            ],
-            "technologies": [
-                "{{Lua}}",
-                "Neovim API"
-            ]
-        },
-        {
-            "name": "ShopiCSV",
-            "images": [
-                "../images/shopicsv1.webp",
-                "../images/shopicsv2.webp",
-                "../images/shopicsv3.webp"
-            ],
-            "year": 2022,
-            "demoUrl": "https://www.shopicsv.app",
-            "githubUrl": "https://www.github.com/zyriab/ShopiCSV",
-            "content": [
-                "ShopiCSV is my {{biggest personal project}} to date and my second attempt at building software for a commercial purpose.",
-                "Originally born as an internal tool in a {{startup}} where I was the only engineer, I {{kept working}} on it in order to take it to the next level and make a proper {{SaaS}} out of it.\nWorking on this project actually took me on the {{next level}} and made me way more confident in my skills as a full-stack software developer, designer and {{creative}} engineer than I was before.",
-                "{{What were the challenges:}}\nBefore starting to work on ShopiCSV I hadn't worked a so much with JavaScript and {{React}}, same goes with Auth0, {{AWS}}, internationalization and proper {{CI/CD}}.\nThankfully, I was able to use my {{extensive experience}} with software engineering and {{project management}} to bring this project to where it is today and I intend to {{continue}} working on this project in order to make it available to {{Shopify merchants}} needing it."
-            ],
-            "technologies": [
-                "{{TypeScript}}",
-                "Auth0",
-                "{{React}}",
-                "LogRocket",
-                "Vercel",
-                "{{i18next}}"
-            ]
-        },
-        {
-            "name": "nouvell",
-            "images": [
-                "../images/nouvell.webp"
-            ],
-            "year": 2022,
-            "githubUrl": "https://www.github.com/zyriab/nouvell",
-            "content": [
-                "I started to build nouvell in order to implement a {{newsletter}} for ShopiCSV's presentation website.\nAfter taking a look at the already existing newsletter tools, I found that they were too {{bloated}} for what I wanted to do, since I had to create an account and had to pay if I wanted some functionalities like unlimited subscribers and {{full mail customization}}.",
-                "{{What were the challenges}}:\nSince my project here was to build something {{scalable}} and {{maintainable}} quickly, the main challenge was to juggle between architecture design, forseeing the possible use cases and doing the research about {{Lambda}} and MongoDB while keeping a {{fast-paced development process}}.\n\nAfter {{4 days}} I had a fully functional {{API}} with the possibility to add, remove and edit subscribers, as well as add new products to the {{database}}.\n\n<i>More functionalities are to come and I intend to make nouvell a {{viable API}} for those who want to implement their own newsletter {{solution}} (frontend tooling is coming!)</i>"
-            ],
-            "technologies": [
-                "{{Node.js}}",
-                "TypeScript",
-                "{{GraphQL}}",
-                "Mongoose",
-                "{{AWS Lambda}}",
-                "Express",
-                "NodeMailer",
-                "{{Jest}}"
-            ]
-        },
-        {
-            "name": "Buckaroo",
-            "images": [
-                "../images/buckaroo.webp"
-            ],
-            "year": 2022,
-            "githubUrl": "https://www.github.com/zyriab/Buckaroo",
-            "content": [
-                "Buckaroo was born during the development of ShopiCSV, originally developed as its backend in the span of {{2 weeks}}.\nThe idea was to provide an {{abstraction layer}} between the frontend and {{AWS S3 SDK}}, making it easier and less error-prone to {{POST}}, {{GET}} and manage files on {{buckets}}.\nThis was my first experience with {{serverless architecture}}, using AWS Lambda.",
-                "{{What were the challenges}}:\nBuckaroo was actually the part of ShopiCSV's development that I {{enjoyed the most}} and the biggest challenge for me was to let it go, once I had built an API with the {{features needed}} by the frontend.\nI would have loved to keep {{working}} on it for a couple months, in order to build what I envision for this API to be: a truly {{multi-use}} and {{unopinionated miniservice}}.\n\n<i>Buckaroo, as well as its {{SDK}}, is a project I intend to bring to the {{next level}}, with the goal to make it a {{reliable}} and {{trusted}} tool for the developer community.</i>"
-            ],
-            "technologies": [
-                "{{TypeScript}}",
-                "Node.js",
-                "GraphQL",
-                "{{AWS S3}}",
-                "AWS Lambda",
-                "{{Auth0}}",
-                "Express",
-                "{{Jest}}"
-            ]
-        },
-        {
-            "name": "Polaris File Explorer",
-            "images": [
-                "../images/pfx1.webp",
-                "../images/pfx2.webp"
-            ],
-            "year": 2022,
-            "demoUrl": "https://demo.shopicsv.app/",
-            "githubUrl": "https://www.github.com/zyriab/polaris-file-explorer",
-            "content": [
-                "PFx was born during the develoment of ShopiCSV, right after Buckaroo and its {{SDK}}.\nI needed an {{intuitive UX}} in order to navigate, {{compare}} and manage files while {{retaining the Shopify aspect}} of the UI.",
-                "{{What were the challenges}}:\nThe main challenge actually arose when I decided to make this a {{standalone tool}}, separating it from ShopiCSV meant making it {{less opinionated}} about the actual content that it will browse, fetch and let the {{user}} manage."
-            ],
-            "technologies": [
-                "TypeScript",
-                "{{React}}"
-            ]
-        },
-        {
-            "name": "Plankton Synapse",
-            "images": [
-                "../images/plankton1.webp",
-                "../images/plankton2.webp"
-            ],
-            "year": 2018,
-            "demoUrl": "https://zyriabdsgn.github.io/Plankton-Synapse/",
-            "githubUrl": "https://www.github.com/zyriab/Plankton-Synapse",
-            "content": [
-                "Based on the contents of a {{rule book}} (the one in the GitHub repo's readme), I had to take care of the {{entire}} project, doing things such as: {{designing}} the game's UX, UI, {{software architecture}}, defining priorities and {{userflow}}.\nThis project was, at first, built with a standard GUI library ({{GTK#}}) but limitations in said library made me go a {{different route}} and chose a proper {{game engine}}.",
-                "{{What were the challenges}}:\nIn this project, the challenges were {{numerous}}, firstly I didn't have a working computer at that time so I had to {{develop}} the game's logic on a {{small smartphone}} for about {{4-5 months}}, which added lots of productivity and {{debugging}} issues.\nThen I was pretty new to Unity and had to follow along {{tutorials}} while developing the game all the while {{managing}} the entire {{project}} with a game designer who wasn't technical at all and not really present, leaving me with the feeling that I was {{working alone}} for many months and doing most of the work on a practical and emotional level.",
-                "<i>I am currently rewriting and {{redesigning}} this game {{from scratch}} in {{Go}} using the {{standard library}} and {{Raylib}}. It will feature {{AI}}, {{online mode}} and will be available on {{Steam}} in the {{coming year}} (2024)</i>"
-            ],
-            "technologies": [
-                "{{C#}}",
-                "Unity"
-            ]
-        }
-    ]
+  "data": [
+    {
+      "name": "Artisan Web",
+      "year": 2024,
+      "demoUrl": "https://artisanweb.be",
+      "content": [
+        "Artisan Web is a {{B2B web agency}} that I founded in order to provide {{high-quality}} and {{custom}} websites to small and medium-sized businesses in Belgium.",
+        "We offer subscription-based {{web development}} and {{design}} services, as well as {{custom work}}.",
+        "Our guarantee is that we will always provide a {{unique}} and {{fast}} website, {{100% handmade}}, that is {{responsive}} and {{SEO-optimized}} while offering excellent and personalized {{customer service}}."
+      ],
+      "technologies": [
+        "{{WebC}} (HTML superset)",
+        "TailwindCSS",
+        "{{Go}}",
+        "CSS",
+        "{{Templ}}",
+        "Eleventy",
+        "{{JavaScript}}"
+      ]
+    },
+    {
+      "name": "wallenart.dev",
+      "year": 2023,
+      "githubUrl": "https://github.com/zyriab/portfolio",
+      "content": [
+        "This website was built in {{3 days}} using only HTML, CSS and JavaScript with {{no other dependencies}} or tooling than an external API to fetch {{Bible}} verses.\nIt is a {{100% original UX & UI}} that I built and designed, based on {{terminal user interfaces}} (aka {{TUI}}).",
+        "It is also a {{static website}} that is {{completely responsive}}, with a quite distinct {{mobile}} and {{desktop}} UX.\nI've always {{loved}} TUI and wanted to give this experience to {{you}}, dear visitor.",
+        "I also wanted to {{showcase}} my {{skills}} as a {{full-stack}} developer and {{designer}} by building a {{fast}} and {{responsive}} website that is {{unique}} and {{interesting}} in itself.",
+        "I hope you {{enjoy}} your stay and {{come back}} soon! ;)"
+      ],
+      "technologies": ["{{HTML}}", "CSS", "{{JavaScript}}"]
+    },
+    {
+      "name": "npm-dap.nvim",
+      "year": 2023,
+      "githubUrl": "https://github.com/zyriab/npm-dap.nvim",
+      "images": ["../images/npm-dap.webp"],
+      "content": [
+        "npm-dap.nvim is a {{Neovim}} plugin that I built in order to {{debug}} {{Node.js}} applications using the {{DAP}} protocol through a {{user-friendly}} UI inspired by {{VSCode}}.\nIt is my first Neovim {{plugin}} already proved quite useful when working with {{Node.js}} in professinal settings."
+      ],
+      "technologies": ["{{Lua}}", "Neovim API"]
+    },
+    {
+      "name": "ShopiCSV",
+      "images": [
+        "../images/shopicsv1.webp",
+        "../images/shopicsv2.webp",
+        "../images/shopicsv3.webp"
+      ],
+      "year": 2022,
+      "demoUrl": "https://www.shopicsv.app",
+      "githubUrl": "https://www.github.com/zyriab/ShopiCSV",
+      "content": [
+        "ShopiCSV is my {{biggest personal project}} to date and my second attempt at building software for a commercial purpose.",
+        "Originally born as an internal tool in a {{startup}} where I was the only engineer, I {{kept working}} on it in order to take it to the next level and make a proper {{SaaS}} out of it.\nWorking on this project actually took me on the {{next level}} and made me way more confident in my skills as a full-stack software developer, designer and {{creative}} engineer than I was before.",
+        "{{What were the challenges:}}\nBefore starting to work on ShopiCSV I hadn't worked a so much with JavaScript and {{React}}, same goes with Auth0, {{AWS}}, internationalization and proper {{CI/CD}}.\nThankfully, I was able to use my {{extensive experience}} with software engineering and {{project management}} to bring this project to a point where I could {{demo it}} to get my next job as a software engineer while awaiting for my son's birth."
+      ],
+      "technologies": [
+        "{{TypeScript}}",
+        "Auth0",
+        "{{React}}",
+        "LogRocket",
+        "Vercel",
+        "{{i18next}}"
+      ]
+    },
+    {
+      "name": "nouvell",
+      "images": ["../images/nouvell.webp"],
+      "year": 2022,
+      "githubUrl": "https://www.github.com/zyriab/nouvell",
+      "content": [
+        "I started to build nouvell in order to implement a {{newsletter}} for ShopiCSV's presentation website.\nAfter taking a look at the already existing newsletter tools, I found that they were too {{bloated}} for what I wanted to do, since I had to create an account and had to pay if I wanted some functionalities like unlimited subscribers and {{full mail customization}}.",
+        "{{What were the challenges}}:\nSince my project here was to build something {{scalable}} and {{maintainable}} quickly, the main challenge was to juggle between architecture design, forseeing the possible use cases and doing the research about {{Lambda}} and MongoDB while keeping a {{fast-paced development process}}.\n\nAfter {{4 days}} I had a fully functional {{API}} with the possibility to add, remove and edit subscribers, as well as add new products to the {{database}}."
+      ],
+      "technologies": [
+        "{{Node.js}}",
+        "TypeScript",
+        "{{GraphQL}}",
+        "Mongoose",
+        "{{AWS Lambda}}",
+        "Express",
+        "NodeMailer",
+        "{{Jest}}"
+      ]
+    },
+    {
+      "name": "Buckaroo",
+      "images": ["../images/buckaroo.webp"],
+      "year": 2022,
+      "githubUrl": "https://www.github.com/zyriab/Buckaroo",
+      "content": [
+        "Buckaroo was born during the development of ShopiCSV, originally developed as its backend in the span of {{2 weeks}}.\nThe idea was to provide an {{abstraction layer}} between the frontend and {{AWS S3 SDK}}, making it easier and less error-prone to {{POST}}, {{GET}} and manage files on {{buckets}}.\nThis was my first experience with {{serverless architecture}}, using AWS Lambda.",
+        "{{What were the challenges}}:\nBuckaroo was actually the part of ShopiCSV's development that I {{enjoyed the most}} and the biggest challenge for me was to let it go, once I had built an API with the {{features needed}} by the frontend.\nI would have loved to keep {{working}} on it for a couple months, in order to build what I envision for this API to be: a truly {{multi-use}} and {{unopinionated miniservice}}."
+      ],
+      "technologies": [
+        "{{TypeScript}}",
+        "Node.js",
+        "GraphQL",
+        "{{AWS S3}}",
+        "AWS Lambda",
+        "{{Auth0}}",
+        "Express",
+        "{{Jest}}"
+      ]
+    },
+    {
+      "name": "Polaris File Explorer",
+      "images": ["../images/pfx1.webp", "../images/pfx2.webp"],
+      "year": 2022,
+      "demoUrl": "https://demo.shopicsv.app/",
+      "githubUrl": "https://www.github.com/zyriab/polaris-file-explorer",
+      "content": [
+        "PFx was born during the develoment of ShopiCSV, right after Buckaroo and its {{SDK}}.\nI needed an {{intuitive UX}} in order to navigate, {{compare}} and manage files while {{retaining the Shopify aspect}} of the UI.",
+        "{{What were the challenges}}:\nThe main challenge actually arose when I decided to make this a {{standalone tool}}, separating it from ShopiCSV meant making it {{less opinionated}} about the actual content that it will browse, fetch and let the {{user}} manage."
+      ],
+      "technologies": ["TypeScript", "{{React}}"]
+    },
+    {
+      "name": "Plankton Synapse",
+      "images": ["../images/plankton1.webp", "../images/plankton2.webp"],
+      "year": 2018,
+      "demoUrl": "https://zyriabdsgn.github.io/Plankton-Synapse/",
+      "githubUrl": "https://www.github.com/zyriab/Plankton-Synapse",
+      "content": [
+        "Based on the contents of a {{rule book}} (the one in the GitHub repo's readme), I had to take care of the {{entire}} project, doing things such as: {{designing}} the game's UX, UI, {{software architecture}}, defining priorities and {{userflow}}.\nThis project was, at first, built with a standard GUI library ({{GTK#}}) but limitations in said library made me go a {{different route}} and chose a proper {{game engine}}.",
+        "{{What were the challenges}}:\nIn this project, the challenges were {{numerous}}, firstly I didn't have a working computer at that time so I had to {{develop}} the game's logic on a {{small smartphone}} for about {{4-5 months}}, which added lots of productivity and {{debugging}} issues.\nThen I was pretty new to Unity and had to follow along {{tutorials}} while developing the game all the while {{managing}} the entire {{project}} with a game designer who wasn't technical at all and not really present, leaving me with the feeling that I was {{working alone}} for many months and doing most of the work on a practical and emotional level.",
+        "<i>I am currently rewriting and {{redesigning}} this game {{from scratch}} in {{Go}} using the {{standard library}} and {{Raylib}}. It will feature {{AI}}, {{online mode}} and will be available on {{Steam}} in the {{coming year}} (2024)</i>"
+      ],
+      "technologies": ["{{C#}}", "Unity"]
+    }
+  ]
 }
