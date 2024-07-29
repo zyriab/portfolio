@@ -1,34 +1,36 @@
 {
-    "data": [
-        {
-            "content": [
-                "Hi, I'm {{Arthur}} Wallendorff 🤙",
-                "A {{backend-focused}} software engineer and {{father}}."
-            ]
-        },
-        {
-            "content": [
-                "Although my focus is on backend, most of my professional experience has been as a {{full-stack}} developer.",
-                "I also enjoy programming low level stuff, like {{C}} and tinkering with {{electronics}}."
-            ]
-        },
-        {
-            "content": [
-                "Another great interest of mine is {{UX design}}, that I like to approach in a broader sense and not only through user interfaces.",
-                "I'm a {{passionate}} developer, always looking for new challenges and opportunities to learn."
-            ]
-        },
-        {
-            "content": [
-                "Feel free to connect on <a href=\"https://www.linkedin.com/in/arthur-wallendorff/\" target=\"_blank\" class=\"text-blue\">LinkedIn</a> or check out my work on <a href=\"https://www.github.com/zyriab/\" target=\"_blank\" class=\"text-pink\">GitHub</a>",
-                "You can find my resumé over here => <a href=\"/wallendorff-arthur-resume.pdf\" class=\"text-orange\">resumé</a> <a href=\"/wallendorff-arthur-resume-printable.pdf\" class=\"text-pink text-xs\" target=\"_blank\">&lt;printable version&gt;</a>"
-            ]
-        },
-        {
-            "content": [
-                "{{Click}} on a section on the left to learn more about my {{work}} and past {{experiences}}.",
-                "You can also {{navigate}} through the sections using the {{arrow keys}} or {{Vim motions}}."
-            ]
-        }
-    ]
+  "data": [
+    {
+      "content": [
+        "Hi, I'm {{Arthur}} Wallendorff 🤙",
+        "A {{backend-focused}} software engineer and {{father}}."
+      ]
+    },
+    {
+      "content": [
+        "Although my focus is on backend, most of my professional experience has been as a {{full-stack}} developer.",
+        "I also enjoy programming low level stuff, like {{C}} and tinkering with {{electronics}}."
+      ]
+    },
+    {
+      "content": [
+        "Another great interest of mine is {{UX design}}, that I like to approach in a broader sense and not only through user interfaces.",
+        "I'm a {{passionate}} developer, always looking for new challenges and opportunities to learn."
+      ]
+    },
+    {
+      "content": [
+        "Nowadays, you can find me on <a href=\"https://x.com/AutisticOvrflow\" target=\"_blank\" class=\"text-orange\">X (Twitter)</a>.",
+        "If you like cringe-inducing experiences, feel free to connect on <a href=\"https://www.linkedin.com/in/arthur-wallendorff/\" target=\"_blank\" class=\"text-blue\">LinkedIn</a>.",
+        "You can always check out my work on <a href=\"https://www.github.com/zyriab/\" target=\"_blank\" class=\"text-pink\">GitHub</a>.",
+        "You can find my resumé over here => <a href=\"/wallendorff-arthur-resume.pdf\" class=\"text-orange\">resumé</a> <a href=\"/wallendorff-arthur-resume-printable.pdf\" class=\"text-pink text-xs\" target=\"_blank\">&lt;printable version&gt;</a>"
+      ]
+    },
+    {
+      "content": [
+        "{{Click}} on a section on the left to learn more about my {{work}} and past {{experiences}}.",
+        "You can also {{navigate}} through the sections using the {{arrow keys}} or {{Vim motions}}."
+      ]
+    }
+  ]
 }
