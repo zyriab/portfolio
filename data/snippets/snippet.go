@@ -1,4 +1,4 @@
-package utils 
+package datastructure
 
 type Deque[T any] struct {
 	items []T
