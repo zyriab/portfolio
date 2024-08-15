@@ -1,6 +1,29 @@
 {
   "data": [
     {
+      "name": " Go",
+      "content": [
+        "Go is a {{programming language}} mainly used for {{backend}} development.\nIt is {{fast}}, {{simple}}, {{powerful}} and {{fun}}.",
+        "For some programmers, its {{simplicity}} can also be its {{downfall}} as it does not have all the bell and whistles as some languages, such as JavaScript.\nOn the other hand, it is much {{less bloated}} and gives a lot of {{freedom}} to the programmer, very much like its big brother {{C}}.",
+        "It is {{fast}} because it is {{compiled}} to {{machine code}}.\nIt is {{powerful}} because it is {{statically typed}} and {{concurrent}}.\nIt is {{simple}} because it is {{opinionated}}, has a very {{complete}} standard library and only contains {{25 keywords}}.",
+        "I have been using Go for less than {{1 year}} and I am getting the hang of it.\nI have used it to {{fast-prototype}} a {{web crawler}} and I am currently working on a {{video game}} with it.",
+        "If I were {{Maïté}}, Go would be my {{Ortolan}}."
+      ],
+      "snippet": "go"
+    },
+    {
+      "name": " C",
+      "content": [
+        "C is a {{programming language}} mainly used for {{low-level}} development.\nIt is {{fast}}, {{simple}}, and extremely {{powerful}}.",
+        "It has been around since the {{70s}} and is still used today in {{operating systems}}, {{embedded systems}}, {{video games}}, {{time-sensitive}} algorithms and much more.\nThe device that you are currently using has its very {{core}} written in C, all kind of devices like {{your monitor}}, {{car}}, and {{spaceships}} (hi Elon) do {{extensive}} use of C.",
+        "It is {{fast}} because it is {{compiled}} to {{machine code}}.\nIt is {{powerful}} because it is {{statically typed}} and {{low-level}}.\nIt is {{simple}} because it comes with almost {{no bloat}}.",
+        "C can be {{difficult}} to {{learn}} and {{maintain}} but it is a {{very powerful}} tool that can be used to {{build}} almost anything.\nOne of its {{strength}} (but also pitfall) is the fact that the programmer has to {{manually}} allocate and free {{memory}}, opening the possibility for {{extremely efficient}} software but also for dreaded {{memory leaks}}.",
+        "C is {{my very first}} programming language, I've been dabbling with it since {{2010}} and I am still learning a lot about it.\nI mainly use it to work on {{embedded systems}}, as I enjoy {{bare-metal}} programming.\nIt is also an invaluable {{learning tool}}, especially when coupled with very low-level projects and {{algorithms}} development.",
+        "If I were {{King Arthur}}, C would be my {{Excalibur}}."
+      ],
+      "snippet": "c"
+    },
+    {
       "name": " HTML",
       "content": [
         "HTML is the {{corner stone}} of the world wide web. It is used to {{organize}} and categorize the content of a {{website}}.",
@@ -137,29 +160,6 @@
         "If I were {{Hermes}}, Git would be my {{winged sandals}}."
       ],
       "snippet": null
-    },
-    {
-      "name": " Go",
-      "content": [
-        "Go is a {{programming language}} mainly used for {{backend}} development.\nIt is {{fast}}, {{simple}}, {{powerful}} and {{fun}}.",
-        "For some programmers, its {{simplicity}} can also be its {{downfall}} as it does not have all the bell and whistles as some languages, such as JavaScript.\nOn the other hand, it is much {{less bloated}} and gives a lot of {{freedom}} to the programmer, very much like its big brother {{C}}.",
-        "It is {{fast}} because it is {{compiled}} to {{machine code}}.\nIt is {{powerful}} because it is {{statically typed}} and {{concurrent}}.\nIt is {{simple}} because it is {{opinionated}}, has a very {{complete}} standard library and only contains {{25 keywords}}.",
-        "I have been using Go for less than {{1 year}} and I am getting the hang of it.\nI have used it to {{fast-prototype}} a {{web crawler}} and I am currently working on a {{video game}} with it.",
-        "If I were {{Maïté}}, Go would be my {{Ortolan}}."
-      ],
-      "snippet": "go"
-    },
-    {
-      "name": " C",
-      "content": [
-        "C is a {{programming language}} mainly used for {{low-level}} development.\nIt is {{fast}}, {{simple}}, and extremely {{powerful}}.",
-        "It has been around since the {{70s}} and is still used today in {{operating systems}}, {{embedded systems}}, {{video games}}, {{time-sensitive}} algorithms and much more.\nThe device that you are currently using has its very {{core}} written in C, all kind of devices like {{your monitor}}, {{car}}, and {{spaceships}} (hi Elon) do {{extensive}} use of C.",
-        "It is {{fast}} because it is {{compiled}} to {{machine code}}.\nIt is {{powerful}} because it is {{statically typed}} and {{low-level}}.\nIt is {{simple}} because it comes with almost {{no bloat}}.",
-        "C can be {{difficult}} to {{learn}} and {{maintain}} but it is a {{very powerful}} tool that can be used to {{build}} almost anything.\nOne of its {{strength}} (but also pitfall) is the fact that the programmer has to {{manually}} allocate and free {{memory}}, opening the possibility for {{extremely efficient}} software but also for dreaded {{memory leaks}}.",
-        "C is {{my very first}} programming language, I've been dabbling with it since {{2010}} and I am still learning a lot about it.\nI mainly use it to work on {{embedded systems}}, as I enjoy {{bare-metal}} programming.\nIt is also an invaluable {{learning tool}}, especially when coupled with very low-level projects and {{algorithms}} development.",
-        "If I were {{King Arthur}}, C would be my {{Excalibur}}."
-      ],
-      "snippet": "c"
     },
     {
       "name": " Arduino",
