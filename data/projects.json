@@ -1,6 +1,24 @@
 {
   "data": [
     {
+      "name": "FindLeads",
+      "images": ["../images/findleads1.webp", "../images/findleads2.webp"],
+      "year": 2024,
+      "demoUrl": "https://findleads.app",
+      "content": [
+        "FindLeads is a {{B2B lead generation platform}} for {{web agencies}} and freelancers I built after realizing there was no niche solution for that market segment, of which I am also a part of.",
+        "The platform features a unique search engine with {{advanced filtering}}, fresh data and {{dynamic analyses}}, allowing for a much more efficient and {{effective lead generation process}}."
+      ],
+      "technologies": [
+        "{{Go}}",
+        "VPS",
+        "{{HTMX}}",
+        "Supabase",
+        "{{Postgres}}",
+        "LGTM stack"
+      ]
+    },
+    {
       "name": "Artisan Web",
       "year": 2024,
       "demoUrl": "https://artisanweb.be",
