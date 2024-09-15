@@ -150,6 +150,7 @@ svg {
 
 #home {
   height: auto;
+  padding: 0.5rem;
 }
 
 #home-section-paragraph {
@@ -168,7 +169,7 @@ svg {
   border: 0.1px solid var(--clr-primary-txt);
   position: relative;
   padding-top: 0.2rem;
-  height: 33%;
+  height: 29%;
 }
 
 #left-section .container:hover:not(.selected-frame) {
@@ -527,8 +528,7 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
     width: auto;
   }
 
-  .ui-list div,
-  #home {
+  .ui-list div {
     padding: 0.5rem;
   }
 
@@ -663,5 +663,9 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
 
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
+  }
+
+  #skills {
+    flex-grow: 1;
   }
 }
