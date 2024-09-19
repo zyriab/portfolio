@@ -139,7 +139,7 @@
       "name": "Plankton Synapse",
       "images": ["../images/plankton1.webp", "../images/plankton2.webp"],
       "year": 2018,
-      "demoUrl": "https://zyriabdsgn.github.io/Plankton-Synapse/",
+      "demoUrl": "https://zyriab.github.io/Plankton-Synapse/",
       "githubUrl": "https://www.github.com/zyriab/Plankton-Synapse",
       "content": [
         "Based on the contents of a {{rule book}} (the one in the GitHub repo's readme), I had to take care of the {{entire}} project, doing things such as: {{designing}} the game's UX, UI, {{software architecture}}, defining priorities and {{userflow}}.\nThis project was, at first, built with a standard GUI library ({{GTK#}}) but limitations in said library made me go a {{different route}} and chose a proper {{game engine}}.",
