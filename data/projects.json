@@ -144,7 +144,7 @@
       "content": [
         "Based on the contents of a {{rule book}} (the one in the GitHub repo's readme), I had to take care of the {{entire}} project, doing things such as: {{designing}} the game's UX, UI, {{software architecture}}, defining priorities and {{userflow}}.\nThis project was, at first, built with a standard GUI library ({{GTK#}}) but limitations in said library made me go a {{different route}} and chose a proper {{game engine}}.",
         "{{What were the challenges}}:\nIn this project, the challenges were {{numerous}}, firstly I didn't have a working computer at that time so I had to {{develop}} the game's logic on a {{small smartphone}} for about {{4-5 months}}, which added lots of productivity and {{debugging}} issues.\nThen I was pretty new to Unity and had to follow along {{tutorials}} while developing the game all the while {{managing}} the entire {{project}} with a game designer who wasn't technical at all and not really present, leaving me with the feeling that I was {{working alone}} for many months and doing most of the work on a practical and emotional level.",
-        "<i>I am currently rewriting and {{redesigning}} this game {{from scratch}} in {{Go}} using the {{standard library}} and {{Raylib}}. It will feature {{AI}}, {{online mode}} and will be available on {{Steam}} in the {{coming year}} (2024)</i>"
+        "<i>I am currently rewriting and {{redesigning}} this game {{from scratch}} in {{Go}} using the {{standard library}} and {{Raylib}}. It will feature {{AI}}, {{online mode}} and will be probably be available on {{Steam}} at some point...</i>"
       ],
       "technologies": ["{{C#}}", "Unity"]
     }
