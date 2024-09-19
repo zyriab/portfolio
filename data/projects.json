@@ -19,6 +19,16 @@
       ]
     },
     {
+      "name": "Babilema",
+      "year": 2024,
+      "demoUrl": "https://github.com/ByteBakersCo/babilema",
+      "content": [
+        "Babilema (Esperanto for garrulous) is a {{minimalist static blog generator}} that turns {{GitHub issues}} into blog posts. It is intended to be used as a GitHub action.",
+        "In order to use Babilema, you need to have a GitHub repository with {{issues}} that will be used as blog posts. You can run Babilema from the {{command line}} or as a GitHub action."
+      ],
+      "technologies": ["{{Go}}", "CSS", "{{Eleventy}}", "HTML"]
+    },
+    {
       "name": "Artisan Web",
       "year": 2024,
       "demoUrl": "https://artisanweb.be",
