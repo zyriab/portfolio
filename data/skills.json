@@ -6,7 +6,7 @@
         "Go is a {{programming language}} mainly used for {{backend}} development.\nIt is {{fast}}, {{simple}}, {{powerful}} and {{fun}}.",
         "For some programmers, its {{simplicity}} can also be its {{downfall}} as it does not have all the bell and whistles as some languages, such as JavaScript.\nOn the other hand, it is much {{less bloated}} and gives a lot of {{freedom}} to the programmer, very much like its big brother {{C}}.",
         "It is {{fast}} because it is {{compiled}} to {{machine code}}.\nIt is {{powerful}} because it is {{statically typed}} and {{concurrent}}.\nIt is {{simple}} because it is {{opinionated}}, has a very {{complete}} standard library and only contains {{25 keywords}}.",
-        "I have been using Go for less than {{1 year}} and I am getting the hang of it.\nI have used it to {{fast-prototype}} a {{web crawler}} and I am currently working on a {{video game}} with it.",
+        "I have been using Go for about {{1 year}} and I am quite familiar with it.\nI have used it to {{fast-prototype}} a {{web crawler}} and I am currently working on a {{video game}} with it.",
         "If I were {{Maïté}}, Go would be my {{Ortolan}}."
       ],
       "snippet": "go"
