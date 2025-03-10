@@ -77,7 +77,6 @@
         "../images/shopicsv3.webp"
       ],
       "year": 2022,
-      "demoUrl": "https://www.shopicsv.app",
       "githubUrl": "https://www.github.com/zyriab/ShopiCSV",
       "content": [
         "ShopiCSV is my {{biggest personal project}} to date and my second attempt at building software for a commercial purpose.",
