@@ -79,7 +79,7 @@
       "year": 2022,
       "githubUrl": "https://www.github.com/zyriab/ShopiCSV",
       "content": [
-        "ShopiCSV is my {{biggest personal project}} to date and my second attempt at building software for a commercial purpose.",
+        "ShopiCSV is my first attempt at {{B2B SaaS}}.",
         "Originally born as an internal tool in a {{startup}} where I was the only engineer, I {{kept working}} on it in order to take it to the next level and make a proper {{SaaS}} out of it.\nWorking on this project actually took me on the {{next level}} and made me way more confident in my skills as a full-stack software developer, designer and {{creative}} engineer than I was before.",
         "{{What were the challenges:}}\nBefore starting to work on ShopiCSV I hadn't worked a so much with JavaScript and {{React}}, same goes with Auth0, {{AWS}}, internationalization and proper {{CI/CD}}.\nThankfully, I was able to use my {{extensive experience}} with software engineering and {{project management}} to bring this project to a point where I could {{demo it}} to get my next job as a software engineer while awaiting for my son's birth."
       ],
