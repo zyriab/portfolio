@@ -1,6 +1,22 @@
 {
     "data": [
         {
+            "name": "asciistl",
+            "year": 2026,
+            "content": [
+                "asciistl is a {{3D STL model viewer}} that renders to {{ASCII}} straight in the terminal, written in {{pure C}} with {{no graphics libraries}}.",
+                "I built it to get back to the {{fundamentals}}: parsing binary STL files, {{3D projection}}, a {{software rasterizer}} with {{z-buffering}}, {{Bresenham}} line drawing and real-time {{rotation}} driven from the keyboard via raw-mode {{termios}}.",
+                "It's a {{learning project}} and a deliberate step {{out of web development}} and back toward {{systems programming}}, lighting the model with a {{normal-based shading ramp}} to turn triangles into something that actually looks 3D in a text console."
+            ],
+            "technologies": [
+                "{{C}}",
+                "Linux",
+                "{{Nix}}",
+                "termios",
+                "{{ASan/UBSan}}"
+            ]
+        },
+        {
             "name": "FindLeads",
             "images": [
                 "../images/findleads1.webp",
